@@ -1,0 +1,383 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF6F4D0220661BAF0058B0A0 /* ShotingScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = CF6F4D0120661BAF0058B0A0 /* ShotingScene.sks */; };
+		CF6F4D0420661E280058B0A0 /* ShotingScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6F4D0320661E280058B0A0 /* ShotingScene.swift */; };
+		CF6F4D0C2066377C0058B0A0 /* win.wav in Resources */ = {isa = PBXBuildFile; fileRef = CF6F4D062066377B0058B0A0 /* win.wav */; };
+		CF6F4D0D2066377C0058B0A0 /* lose.wav in Resources */ = {isa = PBXBuildFile; fileRef = CF6F4D072066377B0058B0A0 /* lose.wav */; };
+		CF6F4D0E2066377C0058B0A0 /* catchBugspray.wav in Resources */ = {isa = PBXBuildFile; fileRef = CF6F4D082066377B0058B0A0 /* catchBugspray.wav */; };
+		CF6F4D0F2066377C0058B0A0 /* hitBug.wav in Resources */ = {isa = PBXBuildFile; fileRef = CF6F4D092066377B0058B0A0 /* hitBug.wav */; };
+		CF6F4D102066377C0058B0A0 /* sprayBug.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CF6F4D0A2066377B0058B0A0 /* sprayBug.mp3 */; };
+		CF6F4D112066377C0058B0A0 /* sprayFirebug.wav in Resources */ = {isa = PBXBuildFile; fileRef = CF6F4D0B2066377C0058B0A0 /* sprayFirebug.wav */; };
+		CF6F4D1320663A5D0058B0A0 /* Level.sks in Resources */ = {isa = PBXBuildFile; fileRef = CF6F4D1220663A5D0058B0A0 /* Level.sks */; };
+		CF6F4D1520663D450058B0A0 /* Anchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6F4D1420663D450058B0A0 /* Anchor.swift */; };
+		CF7DACCA2065F431006400A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7DACC92065F431006400A5 /* AppDelegate.swift */; };
+		CF7DACCC2065F432006400A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7DACCB2065F432006400A5 /* ViewController.swift */; };
+		CF7DACCF2065F432006400A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF7DACCD2065F432006400A5 /* Main.storyboard */; };
+		CF7DACD12065F432006400A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF7DACD02065F432006400A5 /* Assets.xcassets */; };
+		CF7DACD42065F432006400A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF7DACD22065F432006400A5 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CF6F4D0120661BAF0058B0A0 /* ShotingScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ShotingScene.sks; sourceTree = "<group>"; };
+		CF6F4D0320661E280058B0A0 /* ShotingScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShotingScene.swift; sourceTree = "<group>"; };
+		CF6F4D062066377B0058B0A0 /* win.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = win.wav; sourceTree = "<group>"; };
+		CF6F4D072066377B0058B0A0 /* lose.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lose.wav; sourceTree = "<group>"; };
+		CF6F4D082066377B0058B0A0 /* catchBugspray.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = catchBugspray.wav; sourceTree = "<group>"; };
+		CF6F4D092066377B0058B0A0 /* hitBug.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hitBug.wav; sourceTree = "<group>"; };
+		CF6F4D0A2066377B0058B0A0 /* sprayBug.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sprayBug.mp3; sourceTree = "<group>"; };
+		CF6F4D0B2066377C0058B0A0 /* sprayFirebug.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sprayFirebug.wav; sourceTree = "<group>"; };
+		CF6F4D1220663A5D0058B0A0 /* Level.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level.sks; sourceTree = "<group>"; };
+		CF6F4D1420663D450058B0A0 /* Anchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anchor.swift; sourceTree = "<group>"; };
+		CF7DACC62065F431006400A5 /* Shoter2D.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shoter2D.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF7DACC92065F431006400A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CF7DACCB2065F432006400A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CF7DACCE2065F432006400A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CF7DACD02065F432006400A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF7DACD32065F432006400A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CF7DACD52065F432006400A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF7DACC32065F431006400A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF6F4D0020661B7A0058B0A0 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				CF6F4D0120661BAF0058B0A0 /* ShotingScene.sks */,
+				CF6F4D0320661E280058B0A0 /* ShotingScene.swift */,
+				CF6F4D1220663A5D0058B0A0 /* Level.sks */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		CF6F4D05206637520058B0A0 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				CF6F4D082066377B0058B0A0 /* catchBugspray.wav */,
+				CF6F4D092066377B0058B0A0 /* hitBug.wav */,
+				CF6F4D072066377B0058B0A0 /* lose.wav */,
+				CF6F4D0A2066377B0058B0A0 /* sprayBug.mp3 */,
+				CF6F4D0B2066377C0058B0A0 /* sprayFirebug.wav */,
+				CF6F4D062066377B0058B0A0 /* win.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		CF7DACBD2065F431006400A5 = {
+			isa = PBXGroup;
+			children = (
+				CF7DACC82065F431006400A5 /* Shoter2D */,
+				CF7DACC72065F431006400A5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF7DACC72065F431006400A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF7DACC62065F431006400A5 /* Shoter2D.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF7DACC82065F431006400A5 /* Shoter2D */ = {
+			isa = PBXGroup;
+			children = (
+				CF6F4D05206637520058B0A0 /* Sounds */,
+				CF6F4D0020661B7A0058B0A0 /* Scene */,
+				CF7DACC92065F431006400A5 /* AppDelegate.swift */,
+				CF7DACCB2065F432006400A5 /* ViewController.swift */,
+				CF7DACCD2065F432006400A5 /* Main.storyboard */,
+				CF7DACD02065F432006400A5 /* Assets.xcassets */,
+				CF7DACD22065F432006400A5 /* LaunchScreen.storyboard */,
+				CF7DACD52065F432006400A5 /* Info.plist */,
+				CF6F4D1420663D450058B0A0 /* Anchor.swift */,
+			);
+			path = Shoter2D;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF7DACC52065F431006400A5 /* Shoter2D */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF7DACD82065F432006400A5 /* Build configuration list for PBXNativeTarget "Shoter2D" */;
+			buildPhases = (
+				CF7DACC22065F431006400A5 /* Sources */,
+				CF7DACC32065F431006400A5 /* Frameworks */,
+				CF7DACC42065F431006400A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Shoter2D;
+			productName = Shoter2D;
+			productReference = CF7DACC62065F431006400A5 /* Shoter2D.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF7DACBE2065F431006400A5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Nikolai Baklanov";
+				TargetAttributes = {
+					CF7DACC52065F431006400A5 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CF7DACC12065F431006400A5 /* Build configuration list for PBXProject "Shoter2D" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF7DACBD2065F431006400A5;
+			productRefGroup = CF7DACC72065F431006400A5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF7DACC52065F431006400A5 /* Shoter2D */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF7DACC42065F431006400A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF7DACD42065F432006400A5 /* LaunchScreen.storyboard in Resources */,
+				CF6F4D102066377C0058B0A0 /* sprayBug.mp3 in Resources */,
+				CF6F4D0F2066377C0058B0A0 /* hitBug.wav in Resources */,
+				CF6F4D112066377C0058B0A0 /* sprayFirebug.wav in Resources */,
+				CF6F4D0220661BAF0058B0A0 /* ShotingScene.sks in Resources */,
+				CF7DACD12065F432006400A5 /* Assets.xcassets in Resources */,
+				CF6F4D0E2066377C0058B0A0 /* catchBugspray.wav in Resources */,
+				CF6F4D1320663A5D0058B0A0 /* Level.sks in Resources */,
+				CF6F4D0D2066377C0058B0A0 /* lose.wav in Resources */,
+				CF6F4D0C2066377C0058B0A0 /* win.wav in Resources */,
+				CF7DACCF2065F432006400A5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF7DACC22065F431006400A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF7DACCC2065F432006400A5 /* ViewController.swift in Sources */,
+				CF6F4D0420661E280058B0A0 /* ShotingScene.swift in Sources */,
+				CF6F4D1520663D450058B0A0 /* Anchor.swift in Sources */,
+				CF7DACCA2065F431006400A5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CF7DACCD2065F432006400A5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF7DACCE2065F432006400A5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CF7DACD22065F432006400A5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF7DACD32065F432006400A5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF7DACD62065F432006400A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CF7DACD72065F432006400A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF7DACD92065F432006400A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZWXN4J2VCP;
+				INFOPLIST_FILE = Shoter2D/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Nikolai-Baklanov.Shoter2D";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CF7DACDA2065F432006400A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZWXN4J2VCP;
+				INFOPLIST_FILE = Shoter2D/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Nikolai-Baklanov.Shoter2D";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF7DACC12065F431006400A5 /* Build configuration list for PBXProject "Shoter2D" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF7DACD62065F432006400A5 /* Debug */,
+				CF7DACD72065F432006400A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF7DACD82065F432006400A5 /* Build configuration list for PBXNativeTarget "Shoter2D" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF7DACD92065F432006400A5 /* Debug */,
+				CF7DACDA2065F432006400A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF7DACBE2065F431006400A5 /* Project object */;
+}
