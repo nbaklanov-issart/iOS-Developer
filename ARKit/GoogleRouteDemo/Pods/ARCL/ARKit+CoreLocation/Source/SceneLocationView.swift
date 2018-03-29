@@ -360,6 +360,7 @@ public class SceneLocationView: ARSCNView, ARSCNViewDelegate {
             SCNTransaction.animationDuration = 0
         }
         
+        print("WE ARE HERE")
         let locationNodeLocation = locationOfLocationNode(locationNode)
         
         //Position is set to a position coordinated via the current position
@@ -380,12 +381,12 @@ public class SceneLocationView: ARSCNView, ARSCNViewDelegate {
                 
                 let adjustedTranslation = SCNVector3(
                     x: Float(locationTranslation.longitudeTranslation) * scale,
-                    y: Float(locationTranslation.altitudeTranslation) * scale,
+                    y: 0,
                     z: Float(locationTranslation.latitudeTranslation) * scale)
                 
                 let position = SCNVector3(
                     x: currentPosition.x + adjustedTranslation.x,
-                    y: currentPosition.y + adjustedTranslation.y,
+                    y: 0,
                     z: currentPosition.z - adjustedTranslation.z)
                 
                 locationNode.position = position
@@ -395,7 +396,7 @@ public class SceneLocationView: ARSCNView, ARSCNViewDelegate {
                 adjustedDistance = distance
                 let position = SCNVector3(
                     x: currentPosition.x + Float(locationTranslation.longitudeTranslation),
-                    y: currentPosition.y + Float(locationTranslation.altitudeTranslation),
+                    y: 0,
                     z: currentPosition.z - Float(locationTranslation.latitudeTranslation))
                 
                 locationNode.position = position

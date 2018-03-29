@@ -45,7 +45,7 @@ class ARViewController: UIViewController
         let image = UIImage(named: "pin")!
         for location:CLLocation in coordinates {
             let annotationNode = LocationAnnotationNode(location: location, image: image)
-            //annotationNode.scaleRelativeToDistance = true
+            annotationNode.scaleRelativeToDistance = true
             print(annotationNode.locationConfirmed)
             sceneLocationView.addLocationNodeWithConfirmedLocation(locationNode: annotationNode)
             nodes.append(annotationNode)
