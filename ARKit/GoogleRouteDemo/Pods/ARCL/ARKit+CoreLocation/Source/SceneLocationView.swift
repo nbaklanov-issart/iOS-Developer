@@ -476,7 +476,7 @@ public class SceneLocationView: ARSCNView, ARSCNViewDelegate {
     }
     
     public func session(_ session: ARSession, cameraDidChangeTrackingState camera: ARCamera) {
-        switch camera.trackingState {
+        /*switch camera.trackingState {
         case .limited(.insufficientFeatures):
             print("camera did change tracking state: limited, insufficient features")
         case .limited(.excessiveMotion):
@@ -487,7 +487,7 @@ public class SceneLocationView: ARSCNView, ARSCNViewDelegate {
             print("camera did change tracking state: normal")
         case .notAvailable:
             print("camera did change tracking state: not available")
-        }
+        }*/
     }
 }
 

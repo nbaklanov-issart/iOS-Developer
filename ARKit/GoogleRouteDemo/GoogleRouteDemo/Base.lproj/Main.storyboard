@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -30,14 +30,6 @@
                                     <action selector="getPathWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="akB-dB-aW3"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Llb-ig-aey">
-                                <rect key="frame" x="320" y="617" width="39" height="30"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Reset"/>
-                                <connections>
-                                    <action selector="resetMarkersWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aRr-Gw-4bo"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -45,8 +37,6 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pfp-8n-ZvE" secondAttribute="bottom" id="BRN-HF-33D"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hjX-j7-luw" secondAttribute="bottom" constant="20" id="C03-ke-wdF"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pfp-8n-ZvE" secondAttribute="trailing" id="C54-TP-qas"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Llb-ig-aey" secondAttribute="bottom" constant="20" id="RZg-Qy-2vE"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Llb-ig-aey" secondAttribute="trailing" constant="16" id="ZqG-68-LwA"/>
                             <constraint firstItem="hjX-j7-luw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="cMh-9N-jh1"/>
                             <constraint firstItem="pfp-8n-ZvE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="mqZ-WE-qDh"/>
                         </constraints>
@@ -70,9 +60,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="zYx-y0-OAn"/>
                     </view>
-                    <connections>
-                        <outlet property="sceneLocationView" destination="bkm-mB-Ii2" id="bzk-ai-Y4Z"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jui-Pz-5yL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -7,40 +7,39 @@
 //
 
 import UIKit
-import ARCL
 import MapKit
 import ARKit
 
 class ARViewController: UIViewController
 {
-    @IBOutlet weak var sceneLocationView:SceneLocationView!
+    /*@IBOutlet weak var sceneLocationView:SceneLocationView!
     
     fileprivate var nodes:[LocationAnnotationNode] = Array()
-    fileprivate var coordinates:[CLLocation] = Array()
+    fileprivate var coordinates:[CLLocation] = Array()*/
     
     public override func viewDidLoad()
     {
         super.viewDidLoad()
-        sceneLocationView.run()
+        //sceneLocationView.run()
     }
     
     public override func viewWillAppear(_ animated: Bool)
     {
         super.viewWillAppear(animated)
-        sceneLocationView.run()
+        //sceneLocationView.run()
     }
     
     public override func viewWillDisappear(_ animated: Bool)
     {
         super.viewWillDisappear(animated)
-        sceneLocationView.pause()
+        //sceneLocationView.pause()
     }
     
     public override func viewDidAppear(_ animated: Bool)
     {
         super.viewDidAppear(animated)
         
-        print(String.init(format: "coors : %@", coordinates))
+        /*print(String.init(format: "coors : %@", coordinates))
         
         let image = UIImage(named: "pin")!
         for location:CLLocation in coordinates {
@@ -59,11 +58,11 @@ class ARViewController: UIViewController
             let lineNode = SCNNode(geometry: line)
             lineNode.geometry?.firstMaterial?.diffuse.contents = UIColor.white
             sceneLocationView.scene.rootNode.addChildNode(lineNode)
-        }
+        }*/
     }
     
     public func setCoordinates(positions:[CLLocation])->Void
     {
-        coordinates = positions
+        //coordinates = positions
     }
 }
