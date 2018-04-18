@@ -21,25 +21,23 @@ class ViewController: UIViewController, GMSMapViewDelegate
     fileprivate var markers:[GMSMarker] = Array()
     fileprivate var lastPathLine:GMSPolyline?
     fileprivate var destinationMarker:GMSMarker?
-    
-    //fileprivate var nodes:[LocationAnnotationNode] = Array()
     fileprivate var locations:[CLLocationCoordinate2D] = Array()
     
     public override func viewDidLoad()
     {
         super.viewDidLoad()
+        
+    }
+    
+    public override func viewDidAppear(_ animated: Bool)
+    {
+        super.viewDidAppear(animated)
         let camera = GMSCameraPosition.camera(withLatitude: 54.992932, longitude: 73.371411, zoom: 18.0)
         mapView = GMSMapView.map(withFrame: defaultMapView.bounds, camera: camera)
         mapView.isMyLocationEnabled = true
         mapView.delegate = self
         mapView.settings.myLocationButton = true
         defaultMapView.addSubview(mapView)
-    }
-    
-    public override func viewDidAppear(_ animated: Bool)
-    {
-        super.viewDidAppear(animated)
-        mapView.frame = defaultMapView.frame
     }
     
     public func mapView(_ mapView: GMSMapView, didTapAt coordinate: CLLocationCoordinate2D)
@@ -49,6 +47,14 @@ class ViewController: UIViewController, GMSMapViewDelegate
         destinationMarker!.position.latitude = coordinate.latitude
         destinationMarker!.position.longitude = coordinate.longitude
         destinationMarker!.map = mapView
+    }
+    
+    @IBAction func moveToAR(sender:UIButton)
+    {
+        let controller:ARViewController? = self.storyboard!.instantiateViewController(withIdentifier: "ARViewController") as? ARViewController
+        guard controller != nil else { return }
+        //controller!.setCoordinates(positions: self.locations)
+        self.navigationController?.pushViewController(controller!, animated: true)
     }
     
     @IBAction func getPath(sender:UIButton)
@@ -80,11 +86,6 @@ class ViewController: UIViewController, GMSMapViewDelegate
                 self.lastPathLine = GMSPolyline.init(path: path)
                 self.lastPathLine!.map = self.mapView
             }
-            
-            /*let controller:ARViewController? = self.storyboard!.instantiateViewController(withIdentifier: "ARViewController") as? ARViewController
-            guard controller != nil else { return }
-            controller!.setCoordinates(positions: self.locations)
-            self.present(controller!, animated: true, completion: nil)*/
         }
     }
 }
