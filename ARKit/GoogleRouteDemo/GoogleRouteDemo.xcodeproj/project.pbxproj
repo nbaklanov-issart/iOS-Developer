@@ -15,6 +15,7 @@
 		CF6F4D50206755850058B0A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF6F4D4F206755850058B0A0 /* Assets.xcassets */; };
 		CF6F4D53206755850058B0A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF6F4D51206755850058B0A0 /* LaunchScreen.storyboard */; };
 		CF6F4D5B20675B510058B0A0 /* GoogleCredentianals.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6F4D5A20675B510058B0A0 /* GoogleCredentianals.swift */; };
+		CFB26BC52088EDFD00D6D348 /* ARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB26BC42088EDFD00D6D348 /* ARView.swift */; };
 		CFED5AFF206C72A100DFF770 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFED5AFE206C72A100DFF770 /* ARViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		CF6F4D52206755850058B0A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF6F4D54206755850058B0A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF6F4D5A20675B510058B0A0 /* GoogleCredentianals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleCredentianals.swift; sourceTree = "<group>"; };
+		CFB26BC42088EDFD00D6D348 /* ARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARView.swift; sourceTree = "<group>"; };
 		CFED5AFE206C72A100DFF770 /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,17 +77,50 @@
 		CF6F4D47206755850058B0A0 /* GoogleRouteDemo */ = {
 			isa = PBXGroup;
 			children = (
+				CFB26BC32088EDDE00D6D348 /* Views */,
+				CFB26BC22088EDD000D6D348 /* Utils */,
+				CFB26BC12088EDBC00D6D348 /* Controllers */,
+				CFB26BC02088EDA300D6D348 /* Extensions */,
 				CF6F4D48206755850058B0A0 /* AppDelegate.swift */,
-				CF6F4D4A206755850058B0A0 /* ViewController.swift */,
 				CF6F4D4C206755850058B0A0 /* Main.storyboard */,
 				CF6F4D4F206755850058B0A0 /* Assets.xcassets */,
 				CF6F4D51206755850058B0A0 /* LaunchScreen.storyboard */,
 				CF6F4D54206755850058B0A0 /* Info.plist */,
-				CF6F4D5A20675B510058B0A0 /* GoogleCredentianals.swift */,
-				CF28F7FF206B206400EF047C /* SCNGeometry+Utils.swift */,
-				CFED5AFE206C72A100DFF770 /* ARViewController.swift */,
 			);
 			path = GoogleRouteDemo;
+			sourceTree = "<group>";
+		};
+		CFB26BC02088EDA300D6D348 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CF28F7FF206B206400EF047C /* SCNGeometry+Utils.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CFB26BC12088EDBC00D6D348 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CF6F4D4A206755850058B0A0 /* ViewController.swift */,
+				CFED5AFE206C72A100DFF770 /* ARViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CFB26BC22088EDD000D6D348 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CF6F4D5A20675B510058B0A0 /* GoogleCredentianals.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		CFB26BC32088EDDE00D6D348 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CFB26BC42088EDFD00D6D348 /* ARView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		D7F743252A5E6E544007477F /* Pods */ = {
@@ -239,6 +274,7 @@
 				CF6F4D4B206755850058B0A0 /* ViewController.swift in Sources */,
 				CF6F4D49206755850058B0A0 /* AppDelegate.swift in Sources */,
 				CFED5AFF206C72A100DFF770 /* ARViewController.swift in Sources */,
+				CFB26BC52088EDFD00D6D348 /* ARView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

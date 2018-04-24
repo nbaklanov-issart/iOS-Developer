@@ -67,12 +67,26 @@
         <scene sceneID="rcJ-4s-z2u">
             <objects>
                 <viewController storyboardIdentifier="ARViewController" id="n48-aK-DJk" customClass="ARViewController" customModule="GoogleRouteDemo" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="bkm-mB-Ii2" customClass="SceneLocationView" customModule="ARCL">
+                    <view key="view" contentMode="scaleToFill" id="bkm-mB-Ii2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mhv-Dt-gCf">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </arscnView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zYx-y0-OAn" firstAttribute="bottom" secondItem="mhv-Dt-gCf" secondAttribute="bottom" id="Q7v-Qx-Fue"/>
+                            <constraint firstItem="zYx-y0-OAn" firstAttribute="trailing" secondItem="mhv-Dt-gCf" secondAttribute="trailing" id="UZJ-Tk-128"/>
+                            <constraint firstItem="mhv-Dt-gCf" firstAttribute="leading" secondItem="zYx-y0-OAn" secondAttribute="leading" id="ZtL-uo-LD2"/>
+                            <constraint firstItem="mhv-Dt-gCf" firstAttribute="top" secondItem="zYx-y0-OAn" secondAttribute="top" id="eBM-pd-y0l"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="zYx-y0-OAn"/>
                     </view>
+                    <connections>
+                        <outlet property="sceneView" destination="mhv-Dt-gCf" id="UXh-Tu-qcg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jui-Pz-5yL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

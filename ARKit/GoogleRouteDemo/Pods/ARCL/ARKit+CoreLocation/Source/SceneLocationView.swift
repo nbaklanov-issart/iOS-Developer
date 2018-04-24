@@ -347,8 +347,7 @@ public class SceneLocationView: ARSCNView, ARSCNViewDelegate {
     }
     
     public func updatePositionAndScaleOfLocationNode(locationNode: LocationNode, initialSetup: Bool = false, animated: Bool = false, duration: TimeInterval = 0.1) {
-        guard let currentPosition = currentScenePosition(),
-            let currentLocation = currentLocation() else {
+        guard let currentPosition = currentScenePosition(), let currentLocation = currentLocation() else {
             return
         }
         
@@ -371,8 +370,7 @@ public class SceneLocationView: ARSCNView, ARSCNViewDelegate {
         
         let distance = locationNodeLocation.distance(from: currentLocation)
         
-        if locationNode.locationConfirmed &&
-            (distance > 100 || locationNode.continuallyAdjustNodePositionWhenWithinRange || initialSetup) {
+        if locationNode.locationConfirmed && (distance > 100 || locationNode.continuallyAdjustNodePositionWhenWithinRange || initialSetup) {
             if distance > 100 {
                 //If the item is too far away, bring it closer and scale it down
                 let scale = 100 / Float(distance)

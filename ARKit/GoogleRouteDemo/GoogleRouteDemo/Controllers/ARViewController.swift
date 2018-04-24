@@ -10,29 +10,36 @@ import UIKit
 import MapKit
 import ARKit
 
-class ARViewController: UIViewController
+class ARViewController: UIViewController, ARSCNViewDelegate
 {
     /*@IBOutlet weak var sceneLocationView:SceneLocationView!
     
     fileprivate var nodes:[LocationAnnotationNode] = Array()
     fileprivate var coordinates:[CLLocation] = Array()*/
     
+    @IBOutlet weak var sceneView: ARSCNView!
+    
     public override func viewDidLoad()
     {
         super.viewDidLoad()
-        //sceneLocationView.run()
+        
+        let scene = SCNScene()
+        sceneView.delegate = self
+        sceneView.scene = scene
     }
     
-    public override func viewWillAppear(_ animated: Bool)
+    override func viewWillAppear(_ animated: Bool)
     {
         super.viewWillAppear(animated)
-        //sceneLocationView.run()
+        let configuration = ARWorldTrackingConfiguration()
+        configuration.worldAlignment = .gravityAndHeading
+        sceneView.session.run(configuration)
     }
     
-    public override func viewWillDisappear(_ animated: Bool)
+    override func viewWillDisappear(_ animated: Bool)
     {
         super.viewWillDisappear(animated)
-        //sceneLocationView.pause()
+        sceneView.session.pause()
     }
     
     public override func viewDidAppear(_ animated: Bool)
