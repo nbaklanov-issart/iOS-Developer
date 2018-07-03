@@ -44,12 +44,12 @@ public class MyArray<E> implements List<E>, RandomAccess {
     
     @Override
     public int size() {
-        return elements.length;
+        return size;
     }
 
     @Override
     public boolean isEmpty() {
-        return elements.length == 0;
+        return size == 0;
     }
 
     @Override
@@ -66,7 +66,7 @@ public class MyArray<E> implements List<E>, RandomAccess {
 
     @Override
     public Iterator<E> iterator() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return new MyIterator<E>(this);
     }
 
     @Override
@@ -104,6 +104,7 @@ public class MyArray<E> implements List<E>, RandomAccess {
 
     @Override
     public void clear() {
+        size = 0;
         elements = (E[]) Array.newInstance(arrayType, DEFAULT_CAPACITY);
     }
 
@@ -143,7 +144,13 @@ public class MyArray<E> implements List<E>, RandomAccess {
 
     @Override
     public E remove(int index) {
-        removeItem(index);
+        if (index < elements.length) {
+            E item = get(index);
+            removeItem(index);
+            return item;
+        } else {
+            throw new IndexOutOfBoundsException();
+        }    
     }
 
     @Override
