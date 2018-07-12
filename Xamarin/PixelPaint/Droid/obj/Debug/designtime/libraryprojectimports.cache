@@ -1,6 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Paths>
-  <Jars />
+  <Jars>
+    <Jar>obj/Debug/lp/1/jl/cicerone-3.0.0.jar</Jar>
+    <Jar>/Users/nbaklanov/Projects/iOSDeveloper/Xamarin/PixelPaint/Droid/obj/Debug/lp/1/jl/cicerone-3.0.0.jar</Jar>
+  </Jars>
   <ResolvedResourceDirectories />
   <ResolvedAssetDirectories />
   <ResolvedEnvironmentFiles />

@@ -1,0 +1,353 @@
+<api>
+  <package name="ru.terrakok.cicerone">
+    <class abstract="true" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="BaseRouter" static="false" visibility="public">
+      <constructor deprecated="not deprecated" final="false" name="BaseRouter" static="false" type="ru.terrakok.cicerone.BaseRouter" visibility="public">
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="executeCommands" native="false" return="void" static="false" synchronized="false" visibility="protected">
+        <parameter name="commands" type="ru.terrakok.cicerone.commands.Command...">
+        </parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Cicerone" static="false" visibility="public">
+      <typeParameters>
+        <typeParameter name="T">
+          <genericConstraints>
+            <genericConstraint type="ru.terrakok.cicerone.BaseRouter">
+            </genericConstraint>
+          </genericConstraints>
+        </typeParameter>
+      </typeParameters>
+      <method abstract="false" deprecated="not deprecated" final="false" name="create" native="false" return="ru.terrakok.cicerone.Cicerone&lt;ru.terrakok.cicerone.Router&gt;" static="true" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="create" native="false" return="ru.terrakok.cicerone.Cicerone&lt;T&gt;" static="true" synchronized="false" visibility="public">
+        <typeParameters>
+          <typeParameter name="T">
+            <genericConstraints>
+              <genericConstraint type="ru.terrakok.cicerone.BaseRouter">
+            </genericConstraint>
+            </genericConstraints>
+          </typeParameter>
+      </typeParameters>
+        <parameter name="customRouter" type="T">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getNavigatorHolder" native="false" return="ru.terrakok.cicerone.NavigatorHolder" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getRouter" native="false" return="T" static="false" synchronized="false" visibility="public">
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="CommandBuffer" static="false" visibility="">
+      <implements name="ru.terrakok.cicerone.NavigatorHolder" name-generic-aware="ru.terrakok.cicerone.NavigatorHolder">
+      </implements>
+      <method abstract="false" deprecated="not deprecated" final="false" name="removeNavigator" native="false" return="void" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setNavigator" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="navigator" type="ru.terrakok.cicerone.Navigator">
+        </parameter>
+      </method>
+    </class>
+    <interface abstract="true" deprecated="not deprecated" final="false" name="Navigator" static="false" visibility="public">
+      <method abstract="true" deprecated="not deprecated" final="false" name="applyCommands" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="ru.terrakok.cicerone.commands.Command[]">
+        </parameter>
+      </method>
+    </interface>
+    <interface abstract="true" deprecated="not deprecated" final="false" name="NavigatorHolder" static="false" visibility="public">
+      <method abstract="true" deprecated="not deprecated" final="false" name="removeNavigator" native="false" return="void" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="setNavigator" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="ru.terrakok.cicerone.Navigator">
+        </parameter>
+      </method>
+    </interface>
+    <class abstract="false" deprecated="not deprecated" extends="ru.terrakok.cicerone.BaseRouter" extends-generic-aware="ru.terrakok.cicerone.BaseRouter" final="false" name="Router" static="false" visibility="public">
+      <constructor deprecated="not deprecated" final="false" name="Router" static="false" type="ru.terrakok.cicerone.Router" visibility="public">
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="backTo" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="screenKey" type="java.lang.String">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="exit" native="false" return="void" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="exitWithResult" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="resultCode" type="java.lang.Integer">
+        </parameter>
+        <parameter name="result" type="java.lang.Object">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="finishChain" native="false" return="void" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="navigateTo" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="screenKey" type="java.lang.String">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="navigateTo" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="screenKey" type="java.lang.String">
+        </parameter>
+        <parameter name="data" type="java.lang.Object">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="newRootScreen" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="screenKey" type="java.lang.String">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="newRootScreen" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="screenKey" type="java.lang.String">
+        </parameter>
+        <parameter name="data" type="java.lang.Object">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="newScreenChain" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="screenKey" type="java.lang.String">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="newScreenChain" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="screenKey" type="java.lang.String">
+        </parameter>
+        <parameter name="data" type="java.lang.Object">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="removeResultListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="resultCode" type="java.lang.Integer">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="replaceScreen" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="screenKey" type="java.lang.String">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="replaceScreen" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="screenKey" type="java.lang.String">
+        </parameter>
+        <parameter name="data" type="java.lang.Object">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="sendResult" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+        <parameter name="resultCode" type="java.lang.Integer">
+        </parameter>
+        <parameter name="result" type="java.lang.Object">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setResultListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="resultCode" type="java.lang.Integer">
+        </parameter>
+        <parameter name="listener" type="ru.terrakok.cicerone.result.ResultListener">
+        </parameter>
+      </method>
+    </class>
+  </package>
+  <package name="ru.terrakok.cicerone.android">
+    <class abstract="true" deprecated="not deprecated" extends="ru.terrakok.cicerone.android.FragmentNavigator" extends-generic-aware="ru.terrakok.cicerone.android.FragmentNavigator" final="false" name="AppNavigator" static="false" visibility="public">
+      <constructor deprecated="not deprecated" final="false" name="AppNavigator" static="false" type="ru.terrakok.cicerone.android.AppNavigator" visibility="public">
+        <parameter name="activity" type="android.app.Activity">
+        </parameter>
+        <parameter name="fragmentManager" type="android.app.FragmentManager">
+        </parameter>
+        <parameter name="containerId" type="int">
+        </parameter>
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="AppNavigator" static="false" type="ru.terrakok.cicerone.android.AppNavigator" visibility="public">
+        <parameter name="activity" type="android.app.Activity">
+        </parameter>
+        <parameter name="containerId" type="int">
+        </parameter>
+      </constructor>
+      <method abstract="true" deprecated="not deprecated" final="false" name="createActivityIntent" native="false" return="android.content.Intent" static="false" synchronized="false" visibility="protected">
+        <parameter name="p0" type="android.content.Context">
+        </parameter>
+        <parameter name="p1" type="java.lang.String">
+        </parameter>
+        <parameter name="p2" type="java.lang.Object">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="createStartActivityOptions" native="false" return="android.os.Bundle" static="false" synchronized="false" visibility="protected">
+        <parameter name="command" type="ru.terrakok.cicerone.commands.Command">
+        </parameter>
+        <parameter name="activityIntent" type="android.content.Intent">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="exit" native="false" return="void" static="false" synchronized="false" visibility="protected">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="unexistingActivity" native="false" return="void" static="false" synchronized="false" visibility="protected">
+        <parameter name="screenKey" type="java.lang.String">
+        </parameter>
+        <parameter name="activityIntent" type="android.content.Intent">
+        </parameter>
+      </method>
+    </class>
+    <class abstract="true" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="FragmentNavigator" static="false" visibility="public">
+      <implements name="ru.terrakok.cicerone.Navigator" name-generic-aware="ru.terrakok.cicerone.Navigator">
+      </implements>
+      <constructor deprecated="not deprecated" final="false" name="FragmentNavigator" static="false" type="ru.terrakok.cicerone.android.FragmentNavigator" visibility="public">
+        <parameter name="fragmentManager" type="android.app.FragmentManager">
+        </parameter>
+        <parameter name="containerId" type="int">
+        </parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="applyCommand" native="false" return="void" static="false" synchronized="false" visibility="protected">
+        <parameter name="command" type="ru.terrakok.cicerone.commands.Command">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="applyCommands" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="commands" type="ru.terrakok.cicerone.commands.Command[]">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="back" native="false" return="void" static="false" synchronized="false" visibility="protected">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="backTo" native="false" return="void" static="false" synchronized="false" visibility="protected">
+        <parameter name="command" type="ru.terrakok.cicerone.commands.BackTo">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="backToUnexisting" native="false" return="void" static="false" synchronized="false" visibility="protected">
+        <parameter name="screenKey" type="java.lang.String">
+        </parameter>
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="createFragment" native="false" return="android.app.Fragment" static="false" synchronized="false" visibility="protected">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+        <parameter name="p1" type="java.lang.Object">
+        </parameter>
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="exit" native="false" return="void" static="false" synchronized="false" visibility="protected">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="forward" native="false" return="void" static="false" synchronized="false" visibility="protected">
+        <parameter name="command" type="ru.terrakok.cicerone.commands.Forward">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="replace" native="false" return="void" static="false" synchronized="false" visibility="protected">
+        <parameter name="command" type="ru.terrakok.cicerone.commands.Replace">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setupFragmentTransaction" native="false" return="void" static="false" synchronized="false" visibility="protected">
+        <parameter name="command" type="ru.terrakok.cicerone.commands.Command">
+        </parameter>
+        <parameter name="currentFragment" type="android.app.Fragment">
+        </parameter>
+        <parameter name="nextFragment" type="android.app.Fragment">
+        </parameter>
+        <parameter name="fragmentTransaction" type="android.app.FragmentTransaction">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="unknownScreen" native="false" return="void" static="false" synchronized="false" visibility="protected">
+        <parameter name="command" type="ru.terrakok.cicerone.commands.Command">
+        </parameter>
+      </method>
+    </class>
+    <class abstract="true" deprecated="not deprecated" extends="ru.terrakok.cicerone.android.SupportFragmentNavigator" extends-generic-aware="ru.terrakok.cicerone.android.SupportFragmentNavigator" final="false" name="SupportAppNavigator" static="false" visibility="public">
+      <method abstract="true" deprecated="not deprecated" final="false" name="createActivityIntent" native="false" return="android.content.Intent" static="false" synchronized="false" visibility="protected">
+        <parameter name="p0" type="android.content.Context">
+        </parameter>
+        <parameter name="p1" type="java.lang.String">
+        </parameter>
+        <parameter name="p2" type="java.lang.Object">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="createStartActivityOptions" native="false" return="android.os.Bundle" static="false" synchronized="false" visibility="protected">
+        <parameter name="command" type="ru.terrakok.cicerone.commands.Command">
+        </parameter>
+        <parameter name="activityIntent" type="android.content.Intent">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="exit" native="false" return="void" static="false" synchronized="false" visibility="protected">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="unexistingActivity" native="false" return="void" static="false" synchronized="false" visibility="protected">
+        <parameter name="screenKey" type="java.lang.String">
+        </parameter>
+        <parameter name="activityIntent" type="android.content.Intent">
+        </parameter>
+      </method>
+    </class>
+    <class abstract="true" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="SupportFragmentNavigator" static="false" visibility="public">
+      <implements name="ru.terrakok.cicerone.Navigator" name-generic-aware="ru.terrakok.cicerone.Navigator">
+      </implements>
+      <method abstract="false" deprecated="not deprecated" final="false" name="applyCommand" native="false" return="void" static="false" synchronized="false" visibility="protected">
+        <parameter name="command" type="ru.terrakok.cicerone.commands.Command">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="applyCommands" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="commands" type="ru.terrakok.cicerone.commands.Command[]">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="back" native="false" return="void" static="false" synchronized="false" visibility="protected">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="backTo" native="false" return="void" static="false" synchronized="false" visibility="protected">
+        <parameter name="command" type="ru.terrakok.cicerone.commands.BackTo">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="backToUnexisting" native="false" return="void" static="false" synchronized="false" visibility="protected">
+        <parameter name="screenKey" type="java.lang.String">
+        </parameter>
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="exit" native="false" return="void" static="false" synchronized="false" visibility="protected">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="forward" native="false" return="void" static="false" synchronized="false" visibility="protected">
+        <parameter name="command" type="ru.terrakok.cicerone.commands.Forward">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="replace" native="false" return="void" static="false" synchronized="false" visibility="protected">
+        <parameter name="command" type="ru.terrakok.cicerone.commands.Replace">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="unknownScreen" native="false" return="void" static="false" synchronized="false" visibility="protected">
+        <parameter name="command" type="ru.terrakok.cicerone.commands.Command">
+        </parameter>
+      </method>
+      <field deprecated="not deprecated" final="false" name="localStackCopy" static="false" transient="false" type="java.util.LinkedList" type-generic-aware="java.util.LinkedList&lt;java.lang.String&gt;" visibility="protected" volatile="false">
+      </field>
+    </class>
+  </package>
+  <package name="ru.terrakok.cicerone.commands">
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Back" static="false" visibility="public">
+      <implements name="ru.terrakok.cicerone.commands.Command" name-generic-aware="ru.terrakok.cicerone.commands.Command">
+      </implements>
+      <constructor deprecated="not deprecated" final="false" name="Back" static="false" type="ru.terrakok.cicerone.commands.Back" visibility="public">
+      </constructor>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="BackTo" static="false" visibility="public">
+      <implements name="ru.terrakok.cicerone.commands.Command" name-generic-aware="ru.terrakok.cicerone.commands.Command">
+      </implements>
+      <constructor deprecated="not deprecated" final="false" name="BackTo" static="false" type="ru.terrakok.cicerone.commands.BackTo" visibility="public">
+        <parameter name="screenKey" type="java.lang.String">
+        </parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getScreenKey" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+      </method>
+    </class>
+    <interface abstract="true" deprecated="not deprecated" final="false" name="Command" static="false" visibility="public"></interface>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Forward" static="false" visibility="public">
+      <implements name="ru.terrakok.cicerone.commands.Command" name-generic-aware="ru.terrakok.cicerone.commands.Command">
+      </implements>
+      <constructor deprecated="not deprecated" final="false" name="Forward" static="false" type="ru.terrakok.cicerone.commands.Forward" visibility="public">
+        <parameter name="screenKey" type="java.lang.String">
+        </parameter>
+        <parameter name="transitionData" type="java.lang.Object">
+        </parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getScreenKey" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getTransitionData" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Replace" static="false" visibility="public">
+      <implements name="ru.terrakok.cicerone.commands.Command" name-generic-aware="ru.terrakok.cicerone.commands.Command">
+      </implements>
+      <constructor deprecated="not deprecated" final="false" name="Replace" static="false" type="ru.terrakok.cicerone.commands.Replace" visibility="public">
+        <parameter name="screenKey" type="java.lang.String">
+        </parameter>
+        <parameter name="transitionData" type="java.lang.Object">
+        </parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getScreenKey" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getTransitionData" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+      </method>
+    </class>
+  </package>
+  <package name="ru.terrakok.cicerone.result">
+    <interface abstract="true" deprecated="not deprecated" final="false" name="ResultListener" static="false" visibility="public">
+      <method abstract="true" deprecated="not deprecated" final="false" name="onResult" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.lang.Object">
+        </parameter>
+      </method>
+    </interface>
+  </package>
+</api>

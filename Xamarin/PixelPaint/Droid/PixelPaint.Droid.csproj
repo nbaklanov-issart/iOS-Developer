@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>PixelPaint.Droid</RootNamespace>
     <AssemblyName>PixelPaint.Droid</AssemblyName>
-    <TargetFrameworkVersion>v8.1.99</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v8.1</TargetFrameworkVersion>
     <AndroidApplication>True</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
     <AndroidResgenClass>Resource</AndroidResgenClass>
@@ -42,11 +42,17 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Mono.Android" />
+    <Reference Include="CiceroneBinding">
+      <HintPath>..\..\CiceroneBinding\CiceroneBinding\bin\Debug\CiceroneBinding.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\Navigation\FrameNavigator.cs" />
+    <Compile Include="Utils\Navigation\INavigatorOwner.cs" />
+    <Compile Include="PixelPaint.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -61,6 +67,10 @@
     <AndroidResource Include="Resources\mipmap-xhdpi\Icon.png" />
     <AndroidResource Include="Resources\mipmap-xxhdpi\Icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Utils\" />
+    <Folder Include="Utils\Navigation\" />
   </ItemGroup>
   <Import Project="..\PixelPaint\PixelPaint.projitems" Label="Shared" Condition="Exists('..\PixelPaint\PixelPaint.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

@@ -1,6 +1,9 @@
 ﻿using Android.App;
 using Android.Widget;
 using Android.OS;
+using PixelPaint.Droid.Utils.Navigation;
+using System;
+using Android.Content;
 
 namespace PixelPaint.Droid
 {
