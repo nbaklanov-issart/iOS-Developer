@@ -1,29 +1,15 @@
 ﻿<Properties StartupConfiguration="{E0D48002-C813-40A2-8093-0F7B018EEF08}|Default">
   <MonoDevelop.Ide.ItemProperties.PixelPaint.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_Accelerated_Nougat" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Droid/MainActivity.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Droid/Properties/AndroidManifest.xml">
     <Files>
-      <File FileName="Droid/MainActivity.cs" Line="10" Column="37" />
-      <File FileName="Droid/Utils/Navigation/INavigatorOwner.cs" Line="8" Column="34" />
-      <File FileName="Droid/Utils/Navigation/FrameNavigator.cs" Line="38" Column="13" />
-      <File FileName="Droid/PixelPaint.cs" Line="24" Column="13" />
+      <File FileName="Droid/Utils/Navigation/INavigatorOwner.cs" Line="8" Column="9" />
+      <File FileName="Droid/Utils/Navigation/FrameNavigator.cs" Line="49" Column="21" />
+      <File FileName="Droid/PixelPaint.cs" Line="33" Column="10" />
+      <File FileName="Droid/Activities/CapturePhotoActivity.cs" Line="24" Column="57" />
+      <File FileName="Droid/Activities/MainActivity.cs" Line="21" Column="72" />
+      <File FileName="Droid/Controls/CameraPreview.cs" Line="46" Column="34" />
+      <File FileName="Droid/Properties/AndroidManifest.xml" Line="6" Column="12" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="PixelPaint" expanded="True">
-            <Node name="PixelPaint" expanded="True" />
-            <Node name="PixelPaint.Droid" expanded="True">
-              <Node name="Properties" expanded="True" />
-              <Node name="Resources" expanded="True" />
-              <Node name="Utils" expanded="True">
-                <Node name="Navigation" expanded="True" />
-              </Node>
-              <Node name="MainActivity.cs" selected="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

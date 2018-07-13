@@ -3,6 +3,6 @@
   <ManifestDocuments />
   <NativeLibraries />
   <Jars>
-    <Jar>obj/Debug/lp/1/jl/cicerone-3.0.0.jar</Jar>
+    <Jar>obj/Debug/lp/0/jl/cicerone-3.0.0.jar</Jar>
   </Jars>
 </Paths>

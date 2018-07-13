@@ -1,4 +1,6 @@
 ﻿using System;
+using Android.Content;
+using PixelPaint.Droid.Activities;
 using RU.Terrakok.Cicerone;
 using RU.Terrakok.Cicerone.Commands;
 
@@ -24,7 +26,7 @@ namespace PixelPaint.Droid.Utils.Navigation
         private void ApplyCommand(ICommand command)
         {
             if(command is Back) {
-                owner.BackCommandHandle();
+                owner.DisplayMessage("Unknown command : Back");
             } else if(command is Replace) {
                 owner.DisplayMessage("Unknown command : Replace");
             } else if(command is Forward) {
@@ -35,7 +37,17 @@ namespace PixelPaint.Droid.Utils.Navigation
 
         private void navigateToActivity(String activityName, Java.Lang.Object parameters) 
         {
-            
+            switch(activityName) {
+                case Constants.MAIN_ACTIVITY: {
+                        owner.GetContext().StartActivity(new Intent(owner.GetContext(), typeof(MainActivity)));
+                        break;
+                    }
+                case Constants.CAPTURE_PHOTO_ACTIVITY: {
+                        owner.GetContext().StartActivity(new Intent(owner.GetContext(), typeof(CapturePhotoActivity)));
+                        break;
+                    }
+
+            }
         }
     }
 }

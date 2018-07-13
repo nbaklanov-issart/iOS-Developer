@@ -27,8 +27,14 @@ namespace PixelPaint.Droid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0
-			public const int myButton = 0;
+			// aapt resource value: 0x7F010003
+			public const int button_capture = 2130771971;
+			
+			// aapt resource value: 0x7F010002
+			public const int camera_preview = 2130771970;
+			
+			// aapt resource value: 0x7F010004
+			public const int myButton = 2130771972;
 			
 			static Id()
 			{
@@ -43,8 +49,11 @@ namespace PixelPaint.Droid
 		public partial class Layout
 		{
 			
-			// aapt resource value: 0
-			public const int Main = 0;
+			// aapt resource value: 0x7F020002
+			public const int CaptureActivityLayout = 2130837506;
+			
+			// aapt resource value: 0x7F020003
+			public const int Main = 2130837507;
 			
 			static Layout()
 			{
@@ -59,8 +68,8 @@ namespace PixelPaint.Droid
 		public partial class Mipmap
 		{
 			
-			// aapt resource value: 0
-			public const int Icon = 0;
+			// aapt resource value: 0x7F030002
+			public const int Icon = 2130903042;
 			
 			static Mipmap()
 			{
@@ -75,11 +84,11 @@ namespace PixelPaint.Droid
 		public partial class String
 		{
 			
-			// aapt resource value: 0
-			public const int app_name = 0;
+			// aapt resource value: 0x7F040003
+			public const int app_name = 2130968579;
 			
-			// aapt resource value: 0
-			public const int hello = 0;
+			// aapt resource value: 0x7F040002
+			public const int hello = 2130968578;
 			
 			static String()
 			{

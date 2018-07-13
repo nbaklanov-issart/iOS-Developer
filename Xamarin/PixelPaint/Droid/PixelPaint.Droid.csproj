@@ -47,12 +47,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utils\Navigation\FrameNavigator.cs" />
     <Compile Include="Utils\Navigation\INavigatorOwner.cs" />
     <Compile Include="PixelPaint.cs" />
+    <Compile Include="Activities\MainActivity.cs" />
+    <Compile Include="Utils\Constants.cs" />
+    <Compile Include="Activities\CapturePhotoActivity.cs" />
+    <Compile Include="Controls\CameraPreview.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -67,10 +70,13 @@
     <AndroidResource Include="Resources\mipmap-xhdpi\Icon.png" />
     <AndroidResource Include="Resources\mipmap-xxhdpi\Icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\Icon.png" />
+    <AndroidResource Include="Resources\layout\CaptureActivityLayout.axml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Utils\" />
     <Folder Include="Utils\Navigation\" />
+    <Folder Include="Activities\" />
+    <Folder Include="Controls\" />
   </ItemGroup>
   <Import Project="..\PixelPaint\PixelPaint.projitems" Label="Shared" Condition="Exists('..\PixelPaint\PixelPaint.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

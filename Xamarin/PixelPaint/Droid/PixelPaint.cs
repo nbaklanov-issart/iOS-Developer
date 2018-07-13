@@ -2,29 +2,42 @@
 using Android.App;
 using Android.Content;
 using Android.Runtime;
+using Android.Widget;
+
+using RU.Terrakok.Cicerone;
+
+using PixelPaint.Droid.Utils.Navigation;
+using PixelPaint.Droid.Utils;
 
 namespace PixelPaint.Droid
 {
     [Application]
-    public class PixelPaint: Application
+    public class PixelPaint: Application, INavigatorOwner
     {
+        public static PixelPaint instance = null;
+        private Cicerone cicerone = null;
+
         public PixelPaint(IntPtr handle, JniHandleOwnership transfer) : base(handle, transfer)
         {
-            // do any initialisation you want here (for example initialising properties)
+            FrameNavigator frameNavigator = new FrameNavigator(this);
+            cicerone = Cicerone.Create();
+            cicerone.NavigatorHolder.SetNavigator(frameNavigator);
+
+            instance = this;
         }
 
         public override void OnCreate()
         {
             base.OnCreate();
-            StartActivity(new Intent(this, typeof(MainActivity)));
+            NavigateTo(Constants.MAIN_ACTIVITY);
         }
 
-        public void BackCommandHandle()
+        public void NavigateTo(String activityName)
         {
-            
+            ((Router)cicerone.Router).NavigateTo(activityName);
         }
 
-        /*public void DisplayMessage(string messageText)
+        public void DisplayMessage(string messageText)
         {
             Toast.MakeText(this, messageText, ToastLength.Long);
         }
@@ -32,6 +45,6 @@ namespace PixelPaint.Droid
         public Context GetContext()
         {
             return this;
-        }*/
+        }
     }
 }
