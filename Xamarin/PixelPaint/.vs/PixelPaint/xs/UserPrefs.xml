@@ -1,14 +1,9 @@
 ﻿<Properties StartupConfiguration="{E0D48002-C813-40A2-8093-0F7B018EEF08}|Default">
   <MonoDevelop.Ide.ItemProperties.PixelPaint.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_Accelerated_Nougat" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Droid/Properties/AndroidManifest.xml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PixelPaint/TitleViewModel.cs">
     <Files>
-      <File FileName="Droid/Utils/Navigation/INavigatorOwner.cs" Line="8" Column="9" />
-      <File FileName="Droid/Utils/Navigation/FrameNavigator.cs" Line="49" Column="21" />
-      <File FileName="Droid/PixelPaint.cs" Line="33" Column="10" />
-      <File FileName="Droid/Activities/CapturePhotoActivity.cs" Line="24" Column="57" />
-      <File FileName="Droid/Activities/MainActivity.cs" Line="21" Column="72" />
-      <File FileName="Droid/Controls/CameraPreview.cs" Line="46" Column="34" />
-      <File FileName="Droid/Properties/AndroidManifest.xml" Line="6" Column="12" />
+      <File FileName="packages/MvvmCross.6.1.2/readme.txt" Line="1" Column="1" />
+      <File FileName="PixelPaint/TitleViewModel.cs" Line="13" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
@@ -16,7 +11,7 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.PixelPaint FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.PixelPaint FirstBuild="True" HideGettingStarted="True" />
   <MonoDevelop.Ide.ItemProperties.PixelPaint.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.51D89E75-2842-4A30-84D4-C8B79A73F556">
     <MonoDevelop.MacDev.AppleDevelopmentTeam />
   </MonoDevelop.Ide.ItemProperties.PixelPaint.iOS>

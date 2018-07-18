@@ -1,0 +1,8 @@
+/Users/nbaklanov/Projects/iOSDeveloper/Xamarin/PixelPaint/Droid/obj/Release/android/assets/PixelPaint.Droid.dll
+/Users/nbaklanov/Projects/iOSDeveloper/Xamarin/PixelPaint/Droid/obj/Release/android/assets/CiceroneBinding.dll
+/Users/nbaklanov/Projects/iOSDeveloper/Xamarin/PixelPaint/Droid/obj/Release/android/assets/Java.Interop.dll
+/Users/nbaklanov/Projects/iOSDeveloper/Xamarin/PixelPaint/Droid/obj/Release/android/assets/Mono.Android.dll
+/Users/nbaklanov/Projects/iOSDeveloper/Xamarin/PixelPaint/Droid/obj/Release/android/assets/mscorlib.dll
+/Users/nbaklanov/Projects/iOSDeveloper/Xamarin/PixelPaint/Droid/obj/Release/android/assets/System.Core.dll
+/Users/nbaklanov/Projects/iOSDeveloper/Xamarin/PixelPaint/Droid/obj/Release/android/assets/System.dll
+/Users/nbaklanov/Projects/iOSDeveloper/Xamarin/PixelPaint/Droid/obj/Release/android/assets/System.Runtime.Serialization.dll

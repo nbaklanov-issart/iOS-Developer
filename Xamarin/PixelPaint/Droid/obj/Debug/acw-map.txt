@@ -1,6 +1,3 @@
-PixelPaint.Droid.PixelPaint, PixelPaint.Droid;md52c56ce97b27dcfc202b71999457d2b53.PixelPaint
-PixelPaint.Droid.PixelPaint;md52c56ce97b27dcfc202b71999457d2b53.PixelPaint
-pixelpaint.droid.PixelPaint;md52c56ce97b27dcfc202b71999457d2b53.PixelPaint
 PixelPaint.Droid.Controls.CameraPreview, PixelPaint.Droid;md583aeef8607541b29e42630781b30cfdb.CameraPreview
 PixelPaint.Droid.Controls.CameraPreview;md583aeef8607541b29e42630781b30cfdb.CameraPreview
 pixelpaint.droid.controls.CameraPreview;md583aeef8607541b29e42630781b30cfdb.CameraPreview

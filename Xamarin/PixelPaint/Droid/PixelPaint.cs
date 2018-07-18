@@ -11,7 +11,7 @@ using PixelPaint.Droid.Utils;
 
 namespace PixelPaint.Droid
 {
-    [Application]
+    /*[Application]
     public class PixelPaint: Application, INavigatorOwner
     {
         public static PixelPaint instance = null;
@@ -24,11 +24,6 @@ namespace PixelPaint.Droid
             cicerone.NavigatorHolder.SetNavigator(frameNavigator);
 
             instance = this;
-        }
-
-        public override void OnCreate()
-        {
-            base.OnCreate();
             NavigateTo(Constants.MAIN_ACTIVITY);
         }
 
@@ -46,5 +41,5 @@ namespace PixelPaint.Droid
         {
             return this;
         }
-    }
+    }*/
 }

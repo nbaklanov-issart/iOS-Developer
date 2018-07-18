@@ -19,7 +19,7 @@ namespace PixelPaint.Droid.Activities
             SetContentView(Resource.Layout.Main);
 
             Button button = FindViewById<Button>(Resource.Id.myButton);
-            button.Click += delegate { PixelPaint.instance.NavigateTo(Constants.CAPTURE_PHOTO_ACTIVITY); };
+            //button.Click += delegate { PixelPaint.instance.NavigateTo(Constants.CAPTURE_PHOTO_ACTIVITY); };
         }
     }
 }
