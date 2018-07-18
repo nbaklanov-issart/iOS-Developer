@@ -1,5 +1,6 @@
 ﻿using System;
 using MvvmCross.ViewModels;
+using PixelPaint.Models;
 
 namespace PixelPaint
 {
