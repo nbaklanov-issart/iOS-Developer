@@ -45,6 +45,10 @@
     <Reference Include="CiceroneBinding">
       <HintPath>..\..\CiceroneBinding\CiceroneBinding\bin\Debug\CiceroneBinding.dll</HintPath>
     </Reference>
+    <Reference Include="MvvmCross">
+      <HintPath>..\packages\MvvmCross.6.1.2\lib\monoandroid81\MvvmCross.dll</HintPath>
+    </Reference>
+    <Reference Include="Java.Interop" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Resources\Resource.designer.cs" />
@@ -61,6 +65,7 @@
     <None Include="Resources\AboutResources.txt" />
     <None Include="Properties\AndroidManifest.xml" />
     <None Include="Assets\AboutAssets.txt" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml" />
