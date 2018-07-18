@@ -1,0 +1,12 @@
+/Users/nikolaiko/Projects/iOS-Developer/Xamarin/PixelPaint/iOS/bin/iPhone/Debug/PixelPaint.iOS.exe
+/Users/nikolaiko/Projects/iOS-Developer/Xamarin/PixelPaint/iOS/bin/iPhone/Debug/PixelPaint.iOS.pdb
+/Users/nikolaiko/Projects/iOS-Developer/Xamarin/PixelPaint/iOS/obj/iPhone/Debug/device-builds/iphone10.5-11.4/ibtool/_BundleResourceWithLogicalName.items
+/Users/nikolaiko/Projects/iOS-Developer/Xamarin/PixelPaint/iOS/obj/iPhone/Debug/device-builds/iphone10.5-11.4/actool/_PartialAppManifest.items
+/Users/nikolaiko/Projects/iOS-Developer/Xamarin/PixelPaint/iOS/obj/iPhone/Debug/device-builds/iphone10.5-11.4/actool/_BundleResourceWithLogicalName.items
+/Users/nikolaiko/Projects/iOS-Developer/Xamarin/PixelPaint/iOS/obj/iPhone/Debug/device-builds/iphone10.5-11.4/coremlc/_PartialAppManifest.items
+/Users/nikolaiko/Projects/iOS-Developer/Xamarin/PixelPaint/iOS/obj/iPhone/Debug/device-builds/iphone10.5-11.4/coremlc/_BundleResourceWithLogicalName.items
+/Users/nikolaiko/Projects/iOS-Developer/Xamarin/PixelPaint/iOS/obj/iPhone/Debug/device-builds/iphone10.5-11.4/optimized/
+/Users/nikolaiko/Projects/iOS-Developer/Xamarin/PixelPaint/iOS/obj/iPhone/Debug/PixelPaint.iOS.csprojResolveAssemblyReference.cache
+/Users/nikolaiko/Projects/iOS-Developer/Xamarin/PixelPaint/iOS/obj/iPhone/Debug/PixelPaint.iOS.csproj.CoreCompileInputs.cache
+/Users/nikolaiko/Projects/iOS-Developer/Xamarin/PixelPaint/iOS/obj/iPhone/Debug/PixelPaint.iOS.exe
+/Users/nikolaiko/Projects/iOS-Developer/Xamarin/PixelPaint/iOS/obj/iPhone/Debug/PixelPaint.iOS.pdb
