@@ -6,3 +6,9 @@
 /Users/nikolaiko/Projects/iOS-Developer/Xamarin/PixelPaint/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.4/optimized/
 /Users/nikolaiko/Projects/iOS-Developer/Xamarin/PixelPaint/iOS/obj/iPhoneSimulator/Debug/PixelPaint.iOS.csprojResolveAssemblyReference.cache
 /Users/nikolaiko/Projects/iOS-Developer/Xamarin/PixelPaint/iOS/obj/iPhoneSimulator/Debug/PixelPaint.iOS.csproj.CoreCompileInputs.cache
+/Users/nikolaiko/Projects/iOS-Developer/Xamarin/PixelPaint/iOS/bin/iPhoneSimulator/Debug/PixelPaint.iOS.exe
+/Users/nikolaiko/Projects/iOS-Developer/Xamarin/PixelPaint/iOS/bin/iPhoneSimulator/Debug/PixelPaint.iOS.pdb
+/Users/nikolaiko/Projects/iOS-Developer/Xamarin/PixelPaint/iOS/bin/iPhoneSimulator/Debug/MvvmCross.dll
+/Users/nikolaiko/Projects/iOS-Developer/Xamarin/PixelPaint/iOS/bin/iPhoneSimulator/Debug/MvvmCross.xml
+/Users/nikolaiko/Projects/iOS-Developer/Xamarin/PixelPaint/iOS/obj/iPhoneSimulator/Debug/PixelPaint.iOS.exe
+/Users/nikolaiko/Projects/iOS-Developer/Xamarin/PixelPaint/iOS/obj/iPhoneSimulator/Debug/PixelPaint.iOS.pdb
