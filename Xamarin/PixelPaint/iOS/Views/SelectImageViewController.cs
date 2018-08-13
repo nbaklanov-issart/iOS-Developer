@@ -1,4 +1,5 @@
 ﻿using System;
+using MvvmCross.Binding.BindingContext;
 using MvvmCross.Platforms.Ios.Views;
 using PixelPaint.Models;
 using PixelPaint.Models.SelectImage;
@@ -8,19 +9,19 @@ namespace PixelPaint.iOS.Views
 {
     public partial class SelectImageViewController : MvxViewController<SelectImageViewModel>
     {
-        private SelectImageDataSource DataSource;
-
         public SelectImageViewController() : base("SelectImageViewController", null)
-        {            
+        {           
         }
 
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
 
-            DataSource = new SelectImageDataSource(ImagesTableView);
-            ImagesTableView.Source = DataSource;
-            ImagesTableView.ReloadData();
+            Console.WriteLine("HERE");
+
+            var binding = this.CreateBindingSet<SelectImageViewController, SelectImageViewModel>();
+            binding.Bind(TakeImageButton).To(vm => vm.MoveToImageTakeCommand);
+            binding.Apply();
         }
 
         public override void DidReceiveMemoryWarning()

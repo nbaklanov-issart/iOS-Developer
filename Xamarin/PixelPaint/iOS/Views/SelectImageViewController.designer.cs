@@ -16,19 +16,10 @@ namespace PixelPaint.iOS.Views
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UITableView ImagesTableView { get; set; }
-
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIButton TakeImageButton { get; set; }
 
         void ReleaseDesignerOutlets ()
         {
-            if (ImagesTableView != null) {
-                ImagesTableView.Dispose ();
-                ImagesTableView = null;
-            }
-
             if (TakeImageButton != null) {
                 TakeImageButton.Dispose ();
                 TakeImageButton = null;
