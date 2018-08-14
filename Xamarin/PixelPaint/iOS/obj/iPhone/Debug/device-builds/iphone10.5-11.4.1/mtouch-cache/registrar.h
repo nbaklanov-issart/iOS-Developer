@@ -29,6 +29,7 @@
 @class MvvmCross_Platforms_Ios_Views_MvxViewController;
 @class MvvmCross_Platforms_Ios_Views_MvxViewController_1;
 @class SelectImageViewController;
+@class TakeImageViewController;
 @class MvvmCross_Platforms_Ios_Views_MvxEventSourceSplitViewController;
 @class MvvmCross_Platforms_Ios_Views_MvxBaseSplitViewController;
 @class MvvmCross_Platforms_Ios_Views_MvxBaseSplitViewController_1;
@@ -74,8 +75,6 @@
 @class __UISwipeGestureRecognizer;
 @class UIKit_UIPageViewController__UIPageViewControllerDataSource;
 @class UIKit_UITextField__UITextFieldDelegate;
-@class UIKit_UIScrollView__UIScrollViewDelegate;
-@class UIKit_UITextView__UITextViewDelegate;
 @class __NSObject_Disposer;
 
 @interface UITableViewSource : NSObject<UIScrollViewDelegate, UIScrollViewDelegate> {
@@ -186,9 +185,16 @@
 
 @interface SelectImageViewController : MvvmCross_Platforms_Ios_Views_MvxViewController_1 {
 }
-	@property (nonatomic, assign) UITableView * ImagesTableView;
-	-(UITableView *) ImagesTableView;
-	-(void) setImagesTableView:(UITableView *)p0;
+	@property (nonatomic, assign) UIButton * TakeImageButton;
+	-(UIButton *) TakeImageButton;
+	-(void) setTakeImageButton:(UIButton *)p0;
+	-(void) viewDidLoad;
+	-(void) didReceiveMemoryWarning;
+	-(id) init;
+@end
+
+@interface TakeImageViewController : MvvmCross_Platforms_Ios_Views_MvxViewController_1 {
+}
 	-(void) viewDidLoad;
 	-(void) didReceiveMemoryWarning;
 	-(id) init;

@@ -6,11 +6,11 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		qbjAPk0zIR4ee2BWqWxXLj2Gpts=
+		Yr+1wSr+IybBZPOoYBwVdUxbE0U=
 		</data>
 		<key>LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		O9EAB7O/Zm1gk6H1zZoNwAi9SAM=
+		MR99TtvWETgKXLn+Rx6hEYJQwlc=
 		</data>
 		<key>LaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		Wmf3Q+dmMZpoarhJOywEoKArVwc=
+		YWYT1Zjfyy3Rn1d2L0k/mfxiuGM=
 		</data>
 		<key>Microsoft.CSharp.aotdata.arm64</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>MvvmCross.aotdata.arm64</key>
 		<data>
-		CEyFA1VmZfK0MpzZtDXhim89LWA=
+		Vpk1znagwryLh+YW8g963VyMby0=
 		</data>
 		<key>MvvmCross.dll</key>
 		<data>
@@ -50,27 +50,23 @@
 		</data>
 		<key>PixelPaint.iOS.aotdata.arm64</key>
 		<data>
-		eolrJyM/9W8zqRfgNaLWxaeRNqg=
+		D1A6bd5NxcdfIS+nKBl71Ff9Plw=
 		</data>
 		<key>PixelPaint.iOS.exe</key>
 		<data>
-		G1GFYVl46LMQVRfCxnL5iuNv0zE=
+		31El4PCUUL/DNjISacAAFFeyme4=
 		</data>
 		<key>PixelPaint.iOS.pdb</key>
 		<data>
-		So7OtjCncYZq9QPreSRvGYBGF7E=
+		hE8LQF6WkOoeUuXkJt/NxyBBe9U=
 		</data>
 		<key>PkgInfo</key>
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
 		</data>
-		<key>SelectImageViewController.nib/objects-11.0+.nib</key>
+		<key>SelectImageViewController.nib</key>
 		<data>
-		50B+jOp7qBeD+MD+kj0nTsyZEWo=
-		</data>
-		<key>SelectImageViewController.nib/runtime.nib</key>
-		<data>
-		oAcZkr8v5bWxr1HGc93lUyAkCJk=
+		Heol9cviSvQik6TUG4voix85nSk=
 		</data>
 		<key>Settings.bundle/Root.plist</key>
 		<data>
@@ -100,17 +96,21 @@
 		<data>
 		ZX+ewwZfhObkOAdCm2A97S22sik=
 		</data>
+		<key>TakeImageViewController.nib</key>
+		<data>
+		RcT68MNEh0ZslwEw4AaBrQ1K1h0=
+		</data>
 		<key>Xamarin.iOS.aotdata.arm64</key>
 		<data>
-		8Vd1zGzrBKjJWc0H2X4VXZUH24I=
+		CSGKtCoBNVVT1JPG8lfbWnqWNHY=
 		</data>
 		<key>Xamarin.iOS.dll</key>
 		<data>
-		Et8+BexZzfsx0dTvrs+NpgCyoYQ=
+		cq7gW4te0jE0iuAe/pyiSmM1dPU=
 		</data>
 		<key>Xamarin.iOS.pdb</key>
 		<data>
-		JJfegu3zfBpzwGwaFbC38mgsTeY=
+		CmThFW/N6BL5Y2Xv9ucT1Tc73vI=
 		</data>
 		<key>archived-expanded-entitlements.xcent</key>
 		<data>
@@ -122,39 +122,39 @@
 		</data>
 		<key>libMicrosoft.CSharp.dll.dylib</key>
 		<data>
-		D5wYKv5cplh8Asgo8nCr6pQyLL8=
+		i916cWybtFOZYsceLN5QP6SFgk0=
 		</data>
 		<key>libMvvmCross.dll.dylib</key>
 		<data>
-		EU+/4p7ohQKjy0alrfOHZ3ORKcA=
+		fgJ+Yj0KmW6JIj/RGz0LG+E05g0=
 		</data>
 		<key>libPixelPaint.iOS.exe.dylib</key>
 		<data>
-		7K33ELhAGPec0XoxfvRlg5f3MU0=
+		zwC+IE7JRpUwVCev0SjaBRTw3oU=
 		</data>
 		<key>libSystem.Core.dll.dylib</key>
 		<data>
-		KqPFicQw7HybUbsYD9ANSddoU/k=
+		kRKFt72aSSIplTbsBXWXp/Q3Ljk=
 		</data>
 		<key>libSystem.dll.dylib</key>
 		<data>
-		mnFQls9eWYOrYR8J+eZBJWElYV8=
+		8MimRcqfcHcNDcB5d1rLFlOcKmg=
 		</data>
 		<key>libXamarin.iOS.dll.dylib</key>
 		<data>
-		rgiFi1HQxckRtQqcJ0GuZxia33E=
+		d2IBpJJV5sGgDuByx/oWjHYWlgw=
 		</data>
 		<key>libmonosgen-2.0.dylib</key>
 		<data>
-		/sFA+RIaP6WBeu/waU0vG3TZerE=
+		fysfipo/OlqOQT73E4gQNV1G1Do=
 		</data>
 		<key>libmscorlib.dll.dylib</key>
 		<data>
-		/tgCW21DTLMd62APPHhDrbnUYyE=
+		mKdhCVh+arqjyNXeIA0U3v7NyTQ=
 		</data>
 		<key>libxamarin-debug.dylib</key>
 		<data>
-		cGLOmJhPIqd9/Y7BS0n2RXDmjb0=
+		LitB6u7D1T7R9xXiBRlqvA0Gmfg=
 		</data>
 		<key>mscorlib.aotdata.arm64</key>
 		<data>
@@ -175,11 +175,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			O9EAB7O/Zm1gk6H1zZoNwAi9SAM=
+			MR99TtvWETgKXLn+Rx6hEYJQwlc=
 			</data>
 			<key>hash2</key>
 			<data>
-			QVtPBUolT7JhrNEbAB6B2UexNFu3Mb4GGHwleyR5cNc=
+			ojV2hvrqXWfWxtRrZaJshsimggJwLc4wkLjAWcBntDw=
 			</data>
 		</dict>
 		<key>LaunchScreen.storyboardc/Info.plist</key>
@@ -197,11 +197,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Wmf3Q+dmMZpoarhJOywEoKArVwc=
+			YWYT1Zjfyy3Rn1d2L0k/mfxiuGM=
 			</data>
 			<key>hash2</key>
 			<data>
-			ew0QFKFtDG3aWXHcmGq4GpK6XEHqlG1pXRi0ryPZA3o=
+			GIqJVSlL2+2jlK5NsLFCx3BKF21dV6f8KdnrZZ2iIxo=
 			</data>
 		</dict>
 		<key>Microsoft.CSharp.aotdata.arm64</key>
@@ -252,11 +252,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CEyFA1VmZfK0MpzZtDXhim89LWA=
+			Vpk1znagwryLh+YW8g963VyMby0=
 			</data>
 			<key>hash2</key>
 			<data>
-			LEnwCfrBhiI9oI3kGw6L77IvdBNGGz95lftcjdlqXV8=
+			HJAHI7pWKVEqaoc+msR6wlIn6LOHg8Xwh6wPwop3nh0=
 			</data>
 		</dict>
 		<key>MvvmCross.dll</key>
@@ -285,55 +285,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eolrJyM/9W8zqRfgNaLWxaeRNqg=
+			D1A6bd5NxcdfIS+nKBl71Ff9Plw=
 			</data>
 			<key>hash2</key>
 			<data>
-			I8bXG0turTwaGuBb++je3iQUIgPy+Mla8/wQEf/G2L0=
+			C6baScAEKMJ6tuvJkoRuIN5oDDuL1nKwuao5POEAO90=
 			</data>
 		</dict>
 		<key>PixelPaint.iOS.exe</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			G1GFYVl46LMQVRfCxnL5iuNv0zE=
+			31El4PCUUL/DNjISacAAFFeyme4=
 			</data>
 			<key>hash2</key>
 			<data>
-			d0Y9wTEa729eiidwlRU/6Aw81sNqw6uEMXwfaaP0TgU=
+			NxHTJaredAFYYGIMaNuoQzGH8ISyiRJ6OjTAPWeylh0=
 			</data>
 		</dict>
 		<key>PixelPaint.iOS.pdb</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			So7OtjCncYZq9QPreSRvGYBGF7E=
+			hE8LQF6WkOoeUuXkJt/NxyBBe9U=
 			</data>
 			<key>hash2</key>
 			<data>
-			eK3AEHr44GfGVZzxj4pWpDi42okN1o7uw+jNaRpGLFo=
+			6RSpcjJVQf6MGl8ZYKAjyJUApkBMOhESnSHhEIB8UrQ=
 			</data>
 		</dict>
-		<key>SelectImageViewController.nib/objects-11.0+.nib</key>
+		<key>SelectImageViewController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			50B+jOp7qBeD+MD+kj0nTsyZEWo=
+			Heol9cviSvQik6TUG4voix85nSk=
 			</data>
 			<key>hash2</key>
 			<data>
-			SI1tr7f+LV1T3kWZfOE+8Eq88rcao7RiIoDL6Xdz97Q=
-			</data>
-		</dict>
-		<key>SelectImageViewController.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			oAcZkr8v5bWxr1HGc93lUyAkCJk=
-			</data>
-			<key>hash2</key>
-			<data>
-			S5TlLSqcQNLCYetnj6FfUNP8BKNY+t7jtGoj0SMOcZE=
+			PnV6iKZJ5/0A5D3TnVjUfLti8YOHWuTYS4GhXi6Y98Y=
 			</data>
 		</dict>
 		<key>Settings.bundle/Root.plist</key>
@@ -413,37 +402,48 @@
 			WuHL8abWIkCeFM3GdVuVd+BqhhQFoimLtx4fE6YBmmM=
 			</data>
 		</dict>
+		<key>TakeImageViewController.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			RcT68MNEh0ZslwEw4AaBrQ1K1h0=
+			</data>
+			<key>hash2</key>
+			<data>
+			fbujwnq+CyTyIwx36C77yuHwD7jyJqjoUF0dG1P10bg=
+			</data>
+		</dict>
 		<key>Xamarin.iOS.aotdata.arm64</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8Vd1zGzrBKjJWc0H2X4VXZUH24I=
+			CSGKtCoBNVVT1JPG8lfbWnqWNHY=
 			</data>
 			<key>hash2</key>
 			<data>
-			i6TMZT92yiB5/hv/hgRCdJU4Hdm4lKZXeNM0q9muVAw=
+			2Lf38+TX9IsI7KU48Sqj2LNRNgUBFt0iKPvjgmOJ3mg=
 			</data>
 		</dict>
 		<key>Xamarin.iOS.dll</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Et8+BexZzfsx0dTvrs+NpgCyoYQ=
+			cq7gW4te0jE0iuAe/pyiSmM1dPU=
 			</data>
 			<key>hash2</key>
 			<data>
-			SHAW+xdoU0jONuL3atQhv727yt1x3KiDAvSWT4DP3zc=
+			z9rSO+zXRk4uPP8sp0w2IGnayMYa/VYrf6RzCbFRwro=
 			</data>
 		</dict>
 		<key>Xamarin.iOS.pdb</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			JJfegu3zfBpzwGwaFbC38mgsTeY=
+			CmThFW/N6BL5Y2Xv9ucT1Tc73vI=
 			</data>
 			<key>hash2</key>
 			<data>
-			rY0mksmYLxJdMNFh5sCdP97KbO74wOGRw+ZCnsSdKVI=
+			FvexbOwRLQL8gDYU++a9hmztXFgtWBXRNTgqFGVN9GE=
 			</data>
 		</dict>
 		<key>archived-expanded-entitlements.xcent</key>
@@ -472,99 +472,99 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			D5wYKv5cplh8Asgo8nCr6pQyLL8=
+			i916cWybtFOZYsceLN5QP6SFgk0=
 			</data>
 			<key>hash2</key>
 			<data>
-			R0uCM2Ojrd68G+G3cXQvKx1qs8HsB0DnmniUsZlIGQ4=
+			usmTTC64urREiiob7s4ZvUgSwY1y1f+G7jBmM1MeaMQ=
 			</data>
 		</dict>
 		<key>libMvvmCross.dll.dylib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			EU+/4p7ohQKjy0alrfOHZ3ORKcA=
+			fgJ+Yj0KmW6JIj/RGz0LG+E05g0=
 			</data>
 			<key>hash2</key>
 			<data>
-			YiENVKTtCXCvKVb2t+DBNH9phCSvxqcJeoHy3YdhV28=
+			em5fVj1HMyS0x/ukQ7IVztzpriUB7MxwHJu9i7KA00M=
 			</data>
 		</dict>
 		<key>libPixelPaint.iOS.exe.dylib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7K33ELhAGPec0XoxfvRlg5f3MU0=
+			zwC+IE7JRpUwVCev0SjaBRTw3oU=
 			</data>
 			<key>hash2</key>
 			<data>
-			/ITvXid/zdhHDTj4kKVYk/8ZbPRcNgr4hWxlHRxXpzU=
+			c9fliYHUiZT22kXfOBxB2ddaGI+QsmdBQK8Mnf639bU=
 			</data>
 		</dict>
 		<key>libSystem.Core.dll.dylib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			KqPFicQw7HybUbsYD9ANSddoU/k=
+			kRKFt72aSSIplTbsBXWXp/Q3Ljk=
 			</data>
 			<key>hash2</key>
 			<data>
-			FQZ1FgSSvcqnFQUjXYHXcVqJqXuF6SVcSyMG/74NH/M=
+			ypuXaNArgE1XYtuO5DX0bNLvAgPbWORZojxv9lmbo3M=
 			</data>
 		</dict>
 		<key>libSystem.dll.dylib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			mnFQls9eWYOrYR8J+eZBJWElYV8=
+			8MimRcqfcHcNDcB5d1rLFlOcKmg=
 			</data>
 			<key>hash2</key>
 			<data>
-			Q8t+pNp8fU/50eteoA5fLaF1FSHy28b/cw2uDzoZ9Jo=
+			ygxsZi2IbBttI08Aexcg6CLUgn0OHLRHKqNdkPoTdvc=
 			</data>
 		</dict>
 		<key>libXamarin.iOS.dll.dylib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rgiFi1HQxckRtQqcJ0GuZxia33E=
+			d2IBpJJV5sGgDuByx/oWjHYWlgw=
 			</data>
 			<key>hash2</key>
 			<data>
-			kR2C6wW6v50Wb/kzo/pSqvNbiwIehZs7HBnTerQ0mrU=
+			IAJ2yq+3JG4EhC6sIAYqYPoPhOnCtYgFcYQvA9GKvno=
 			</data>
 		</dict>
 		<key>libmonosgen-2.0.dylib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/sFA+RIaP6WBeu/waU0vG3TZerE=
+			fysfipo/OlqOQT73E4gQNV1G1Do=
 			</data>
 			<key>hash2</key>
 			<data>
-			HjIEi68P3+rvo1sk4SRlT72GqUYAeZLdI5zSVCFIJwM=
+			7TdG8Zc9FH+WqUpmR17vKbmM9aEBq/nLJ5DNhGjV6OQ=
 			</data>
 		</dict>
 		<key>libmscorlib.dll.dylib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/tgCW21DTLMd62APPHhDrbnUYyE=
+			mKdhCVh+arqjyNXeIA0U3v7NyTQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			Xx0uucdxYIalOCu6RwaGQSSWrfbVHAkShTX68mzx93U=
+			KC8K0JQgG+MTnfF9bxQeykLZoRvdlHCPfSLalHtsL5I=
 			</data>
 		</dict>
 		<key>libxamarin-debug.dylib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			cGLOmJhPIqd9/Y7BS0n2RXDmjb0=
+			LitB6u7D1T7R9xXiBRlqvA0Gmfg=
 			</data>
 			<key>hash2</key>
 			<data>
-			Rz/68kosFwkyspj+9GOoXYV6UMcLa9V0uqjFCNi/uAA=
+			ND5laaQJjnfIMS6T3MHfDpH/MBEuqDk0Aa5gxM+tnTU=
 			</data>
 		</dict>
 		<key>mscorlib.aotdata.arm64</key>

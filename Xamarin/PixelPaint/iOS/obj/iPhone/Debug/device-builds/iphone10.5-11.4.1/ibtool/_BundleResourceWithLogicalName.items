@@ -19,15 +19,13 @@
       <Optimize>false</Optimize>
       <OriginalItemSpec>obj/iPhone/Debug/device-builds/iphone10.5-11.4.1/ibtool/LaunchScreen.storyboardc</OriginalItemSpec>
     </_BundleResourceWithLogicalName>
-    <_BundleResourceWithLogicalName Include="obj/iPhone/Debug/device-builds/iphone10.5-11.4.1/ibtool/SelectImageViewController.nib/objects-11.0+.nib">
-      <LogicalName>SelectImageViewController.nib/objects-11.0+.nib</LogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhone/Debug/device-builds/iphone10.5-11.4.1/ibtool/SelectImageViewController.nib">
+      <LogicalName>SelectImageViewController.nib</LogicalName>
       <Optimize>false</Optimize>
-      <OriginalItemSpec>obj/iPhone/Debug/device-builds/iphone10.5-11.4.1/ibtool/SelectImageViewController.nib</OriginalItemSpec>
     </_BundleResourceWithLogicalName>
-    <_BundleResourceWithLogicalName Include="obj/iPhone/Debug/device-builds/iphone10.5-11.4.1/ibtool/SelectImageViewController.nib/runtime.nib">
-      <LogicalName>SelectImageViewController.nib/runtime.nib</LogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhone/Debug/device-builds/iphone10.5-11.4.1/ibtool/TakeImageViewController.nib">
+      <LogicalName>TakeImageViewController.nib</LogicalName>
       <Optimize>false</Optimize>
-      <OriginalItemSpec>obj/iPhone/Debug/device-builds/iphone10.5-11.4.1/ibtool/SelectImageViewController.nib</OriginalItemSpec>
     </_BundleResourceWithLogicalName>
   </ItemGroup>
 </Project>
