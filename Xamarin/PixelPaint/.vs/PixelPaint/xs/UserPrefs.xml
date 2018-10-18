@@ -1,11 +1,13 @@
 ﻿<Properties StartupConfiguration="{67B47857-A2CA-4DE7-BAC8-4565C381104A}|Default">
   <MonoDevelop.Ide.ItemProperties.PixelPaint.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_Accelerated_Nougat" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/Views/TakeImageViewController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/Views/SelectImageViewController.cs">
     <Files>
       <File FileName="iOS/Views/SelectImageViewController.cs" Line="10" Column="93" />
       <File FileName="PixelPaint/Models/SelectImageViewModel.cs" Line="17" Column="57" />
       <File FileName="PixelPaint/Models/TakeImageViewModel.cs" Line="7" Column="18" />
-      <File FileName="iOS/Views/TakeImageViewController.cs" Line="118" Column="9" />
+      <File FileName="iOS/Views/TakeImageViewController.cs" Line="89" Column="31" />
+      <File FileName="iOS/AppDelegate.cs" Line="60" Column="1" />
+      <File FileName="PixelPaint/App.cs" Line="14" Column="6" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
