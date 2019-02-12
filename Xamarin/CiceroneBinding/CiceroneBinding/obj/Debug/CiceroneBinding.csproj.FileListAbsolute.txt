@@ -1,6 +1,0 @@
-/Users/nbaklanov/Projects/iOSDeveloper/Xamarin/CiceroneBinding/CiceroneBinding/bin/Debug/CiceroneBinding.dll
-/Users/nbaklanov/Projects/iOSDeveloper/Xamarin/CiceroneBinding/CiceroneBinding/bin/Debug/CiceroneBinding.pdb
-/Users/nbaklanov/Projects/iOSDeveloper/Xamarin/CiceroneBinding/CiceroneBinding/obj/Debug/CiceroneBinding.csprojResolveAssemblyReference.cache
-/Users/nbaklanov/Projects/iOSDeveloper/Xamarin/CiceroneBinding/CiceroneBinding/obj/Debug/CiceroneBinding.csproj.CoreCompileInputs.cache
-/Users/nbaklanov/Projects/iOSDeveloper/Xamarin/CiceroneBinding/CiceroneBinding/obj/Debug/CiceroneBinding.dll
-/Users/nbaklanov/Projects/iOSDeveloper/Xamarin/CiceroneBinding/CiceroneBinding/obj/Debug/CiceroneBinding.pdb
