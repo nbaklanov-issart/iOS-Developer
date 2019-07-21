@@ -1,10 +1,8 @@
 package com.iosdeveloper.repositpries
 
-import com.iosdeveloper.model.Card
-import com.iosdeveloper.model.ClientCard
-import com.iosdeveloper.model.TransactionResult
+import com.iosdeveloper.model.*
 import com.iosdeveloper.utils.GENERIC_INSERT_ERROR
-import com.iosdeveloper.utils.WRONG_ID_FORMAT
+import com.stripe.Stripe
 import com.zaxxer.hikari.HikariConfig
 import com.zaxxer.hikari.HikariDataSource
 import kotlinx.coroutines.Dispatchers
@@ -12,6 +10,7 @@ import kotlinx.coroutines.withContext
 import org.jetbrains.exposed.sql.Database
 import org.jetbrains.exposed.sql.SchemaUtils.create
 import org.jetbrains.exposed.sql.insert
+import org.jetbrains.exposed.sql.select
 import org.jetbrains.exposed.sql.selectAll
 import org.jetbrains.exposed.sql.transactions.transaction
 import java.lang.NumberFormatException
@@ -21,7 +20,61 @@ object DatabaseRepository {
         Database.connect(hikari())
         transaction {
             create(ClientCard)
+            create(StripeClient)
+            create(StripeTransaction)
         }
+    }
+
+    fun stripeClientExist():Boolean {
+        val usersList = transaction {
+            StripeClient.selectAll().map {
+                StripeClientObject(id = it[StripeClient.id],
+                    stripeId = it[StripeClient.stripeId])
+            }
+        }
+        return usersList.isNotEmpty()
+    }
+
+    fun addStripeClient(client:StripeClientObject):TransactionResult {
+        var result = TransactionResult()
+        transaction {
+            StripeClient.insert {
+                try {
+                    it[stripeId] = client.stripeId
+                    result = result.copy(success = true)
+                } catch (genericException:Exception) {
+                    result = result.copy(success = false, message = "$GENERIC_INSERT_ERROR : ${genericException.localizedMessage}" )
+                }
+            }
+        }
+        return result
+    }
+
+    fun getStripeClient():StripeClientObject {
+        return transaction {
+            StripeClient.selectAll().map {
+                StripeClientObject(id = it[StripeClient.id],
+                    stripeId = it[StripeClient.stripeId])
+            }.first()
+        }
+    }
+
+    fun addStripeTransaction(transaction:StripeTransactionObject):TransactionResult {
+        var result = TransactionResult()
+        transaction {
+            StripeTransaction.insert {
+                try {
+                    it[transactionId] = transaction.id
+                    it[clientId] = transaction.clientId
+                    it[sourceId] = transaction.sourceId
+                    it[description] = transaction.description
+                    result = result.copy(success = true)
+                } catch (genericException:Exception) {
+                    result = result.copy(success = false, message = "$GENERIC_INSERT_ERROR : ${genericException.localizedMessage}" )
+                }
+            }
+        }
+        return result
     }
 
     fun getAllCards():List<Card> {
@@ -30,10 +83,20 @@ object DatabaseRepository {
                 Card(id = it[ClientCard.id].toString(),
                     number = it[ClientCard.number],
                     cvv = it[ClientCard.cvv],
-                    token = it[ClientCard.token],
-                    default = it[ClientCard.default])
+                    token = it[ClientCard.token])
             }
 
+        }
+    }
+
+    fun getCard(id:Int):Card {
+        return transaction {
+            ClientCard.select{ ClientCard.id eq id }
+                .map { Card(id = it[ClientCard.id].toString(),
+                            number = it[ClientCard.number],
+                            cvv = it[ClientCard.cvv],
+                            token = it[ClientCard.token]) }
+                .first()
         }
     }
 
@@ -42,14 +105,10 @@ object DatabaseRepository {
         transaction {
             ClientCard.insert {
                 try {
-                    it[id] = newCard.id.toInt()
                     it[number] = newCard.number
                     it[token] = newCard.token
-                    it[default] = newCard.default
                     it[cvv] = newCard.cvv
                     result = result.copy(success = true)
-                } catch (idFormatException:NumberFormatException) {
-                    result = result.copy(success = false, message = WRONG_ID_FORMAT)
                 } catch (genericException:Exception) {
                     result = result.copy(success = false, message = "$GENERIC_INSERT_ERROR : ${genericException.localizedMessage}" )
                 }

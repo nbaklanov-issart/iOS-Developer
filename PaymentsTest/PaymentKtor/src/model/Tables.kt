@@ -7,5 +7,17 @@ object ClientCard : Table() {
     val number = varchar("number", 255)
     val cvv = varchar("cvv", 3)
     val token = varchar("token", 255)
-    val default = bool("default")
+}
+
+object StripeClient : Table() {
+    val id = integer("id").primaryKey().autoIncrement()
+    val stripeId = varchar("stripeid", 255)
+}
+
+object StripeTransaction : Table() {
+    val id = integer("id").primaryKey().autoIncrement()
+    val transactionId = varchar("transactionId", 255)
+    val sourceId = varchar("sourceId", 255)
+    val clientId = varchar("clientId", 255)
+    val description = varchar("description", 1024)
 }
