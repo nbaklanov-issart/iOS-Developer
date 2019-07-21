@@ -22,7 +22,8 @@ abstract class BaseApi(exceptionHandler:ErrorHandler) {
     protected val errorCallback: ErrorHandler = exceptionHandler
     protected var requestEncodedPath:String = DEFAULT_STRING_VALUE
 
-    private val serverAddress:String = "overcomingpain.issart.com"
+    private val serverPort:Int = 8080
+    private val serverAddress:String = "192.168.1.186"
     private val serverProtocol: URLProtocol = URLProtocol.HTTP
     private val client = HttpClient {
         expectSuccess = false
@@ -42,6 +43,7 @@ abstract class BaseApi(exceptionHandler:ErrorHandler) {
                         protocol = serverProtocol
                         host = serverAddress
                         encodedPath = requestEncodedPath
+                        port = serverPort
                     }
                     method = HttpMethod.Get
                     body = requestBody
@@ -60,7 +62,37 @@ abstract class BaseApi(exceptionHandler:ErrorHandler) {
         }
     }
 
+    protected fun sendPostRequest(requestBody:Any = EmptyContent,
+                                 parameters:List<Pair<String, String>> = emptyList(),
+                                 requestHeaders:List<Pair<String, String>> = emptyList()) {
+        GlobalScope.launch(CoroutineContextProvider.provideContext()) {
+            try {
+                val call = client.request<HttpResponse> {
+                    url {
+                        protocol = serverProtocol
+                        host = serverAddress
+                        encodedPath = requestEncodedPath
+                        port = serverPort
+                    }
+                    method = HttpMethod.Post
+                    body = requestBody
+
+                    for (currentPair:Pair<String, String> in requestHeaders) {
+                        headers.append(currentPair.first, currentPair.second)
+                    }
+                    for (currentPair:Pair<String, String> in parameters) {
+                        parameter(currentPair.first, currentPair.second)
+                    }
+                }
+                requestResponseHandler(call, call.readText())
+            } catch (requestException:Exception) {
+                requestExceptionHandler(requestException)
+            }
+        }
+    }
+
     private fun requestResponseHandler(response: HttpResponse, textBody:String) {
+        println("Response :  $textBody. Status : ${response.status}")
         when (response.status.value) {
             HttpStatusCode.OK.value -> {
                 processApiResponse(ApiResponseEnum.SUCCESS, textBody)
@@ -73,6 +105,7 @@ abstract class BaseApi(exceptionHandler:ErrorHandler) {
     }
 
     private fun requestExceptionHandler(requestException:Exception) {
+        println("Exception : ${requestException.message}")
         errorCallback(ApiResponseEnum.EXCEPTION, requestException.message ?: "Some default message")
     }
 

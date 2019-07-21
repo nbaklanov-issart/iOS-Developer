@@ -1,9 +1,11 @@
 <resources>
     <string name="app_name">android-app</string>
 
+    <string name="default_id">id</string>
+    <string name="default_number">**************</string>
+    <string name="default_cvv">***</string>
 
 
 
 
-    <string name="add_card_stripe_button_title">Add (Stripe)</string>
 </resources>

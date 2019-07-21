@@ -1,9 +1,9 @@
 package main.interfaces
 
-import main.model.Card
+import main.model.UserCard
 
 interface IAllCardsPresenter {
-    fun updateCardList(cards:List<Card>)
+    fun updateCardList(userCards:List<UserCard>)
 
     fun loadingProcessStarted()
     fun loadingProcessFinished()

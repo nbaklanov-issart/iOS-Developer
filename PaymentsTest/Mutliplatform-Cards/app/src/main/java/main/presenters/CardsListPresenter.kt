@@ -3,13 +3,13 @@ package main.presenters
 import androidx.lifecycle.MutableLiveData
 import main.interactors.AllCardsInteractor
 import main.interfaces.IAllCardsPresenter
-import main.model.Card
+import main.model.UserCard
 import main.utils.DEFAULT_STRING_VALUE
 
 class CardsListPresenter : IAllCardsPresenter {
     private val interactor = AllCardsInteractor(this)
 
-    val cardsList:MutableLiveData<List<Card>> = MutableLiveData()
+    val cardsList:MutableLiveData<List<UserCard>> = MutableLiveData()
     val errorMessage:MutableLiveData<String> = MutableLiveData()
 
     val cardsListVisibility:MutableLiveData<Boolean> = MutableLiveData()
@@ -35,14 +35,22 @@ class CardsListPresenter : IAllCardsPresenter {
 
     }
 
+    fun addNewCard(card:UserCard) {
+        interactor.sendNewCard(card)
+    }
+
+    fun payUsingCard(card:UserCard) {
+        interactor.payUsingCard(card)
+    }
+
     override fun displayErrorMessage(errorText: String) {
         errorMessage.postValue(errorText)
     }
 
-    override fun updateCardList(cards: List<Card>) {
-        cardsList.postValue(cards)
-        cardsListVisibility.postValue(cards.isNotEmpty())
-        emptyLabelVisibility.postValue(cards.isEmpty())
+    override fun updateCardList(userCards: List<UserCard>) {
+        cardsList.postValue(userCards)
+        cardsListVisibility.postValue(userCards.isNotEmpty())
+        emptyLabelVisibility.postValue(userCards.isEmpty())
     }
 
     override fun loadingProcessStarted() {
