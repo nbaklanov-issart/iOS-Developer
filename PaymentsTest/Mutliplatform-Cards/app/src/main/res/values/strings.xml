@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">android-app</string>
+
+
+
+
+
+    <string name="add_card_stripe_button_title">Add (Stripe)</string>
+</resources>
