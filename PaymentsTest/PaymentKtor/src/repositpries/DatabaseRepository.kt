@@ -2,7 +2,6 @@ package com.iosdeveloper.repositpries
 
 import com.iosdeveloper.model.*
 import com.iosdeveloper.utils.GENERIC_INSERT_ERROR
-import com.stripe.Stripe
 import com.zaxxer.hikari.HikariConfig
 import com.zaxxer.hikari.HikariDataSource
 import kotlinx.coroutines.Dispatchers
@@ -13,13 +12,12 @@ import org.jetbrains.exposed.sql.insert
 import org.jetbrains.exposed.sql.select
 import org.jetbrains.exposed.sql.selectAll
 import org.jetbrains.exposed.sql.transactions.transaction
-import java.lang.NumberFormatException
 
 object DatabaseRepository {
     fun init() {
         Database.connect(hikari())
         transaction {
-            create(ClientCard)
+            create(StripeClientCard)
             create(StripeClient)
             create(StripeTransaction)
         }
@@ -77,37 +75,37 @@ object DatabaseRepository {
         return result
     }
 
-    fun getAllCards():List<Card> {
+    fun getAllStripeCards():List<StripeCard> {
         return transaction {
-            ClientCard.selectAll().map {
-                Card(id = it[ClientCard.id].toString(),
-                    number = it[ClientCard.number],
-                    cvv = it[ClientCard.cvv],
-                    token = it[ClientCard.token])
+            StripeClientCard.selectAll().map {
+                StripeCard(id = it[StripeClientCard.id].toString(),
+                    number = it[StripeClientCard.number],
+                    cvv = it[StripeClientCard.cvv],
+                    token = it[StripeClientCard.token])
             }
 
         }
     }
 
-    fun getCard(id:Int):Card {
+    fun getStripeCard(id:Int):StripeCard {
         return transaction {
-            ClientCard.select{ ClientCard.id eq id }
-                .map { Card(id = it[ClientCard.id].toString(),
-                            number = it[ClientCard.number],
-                            cvv = it[ClientCard.cvv],
-                            token = it[ClientCard.token]) }
+            StripeClientCard.select{ StripeClientCard.id eq id }
+                .map { StripeCard(id = it[StripeClientCard.id].toString(),
+                            number = it[StripeClientCard.number],
+                            cvv = it[StripeClientCard.cvv],
+                            token = it[StripeClientCard.token]) }
                 .first()
         }
     }
 
-    fun addNewCard(newCard:Card):TransactionResult {
+    fun addNewStripeCard(newStripeCard:StripeCard):TransactionResult {
         var result = TransactionResult()
         transaction {
-            ClientCard.insert {
+            StripeClientCard.insert {
                 try {
-                    it[number] = newCard.number
-                    it[token] = newCard.token
-                    it[cvv] = newCard.cvv
+                    it[number] = newStripeCard.number
+                    it[token] = newStripeCard.token
+                    it[cvv] = newStripeCard.cvv
                     result = result.copy(success = true)
                 } catch (genericException:Exception) {
                     result = result.copy(success = false, message = "$GENERIC_INSERT_ERROR : ${genericException.localizedMessage}" )

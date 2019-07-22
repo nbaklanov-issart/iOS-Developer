@@ -59,7 +59,9 @@ dependencies {
     implementation "android.arch.navigation:navigation-fragment:1.0.0"
     implementation "android.arch.navigation:navigation-ui:1.0.0"
 
+    //Payments
     implementation 'com.stripe:stripe-android:10.0.0'
+    implementation 'com.braintreepayments.api:drop-in:3.7.1'
 
     androidTestImplementation 'androidx.test:runner:1.2.0'
     implementation 'androidx.recyclerview:recyclerview:1.0.0'

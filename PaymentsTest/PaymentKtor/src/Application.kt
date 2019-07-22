@@ -2,9 +2,9 @@ package com.iosdeveloper
 
 import com.iosdeveloper.model.StripeClientObject
 import com.iosdeveloper.repositpries.DatabaseRepository
-import com.iosdeveloper.routes.cards
-import com.iosdeveloper.routes.charges
+import com.iosdeveloper.routes.brainTree
 import com.iosdeveloper.routes.home
+import com.iosdeveloper.routes.stripe
 import com.iosdeveloper.utils.CREATE_STRIPE_CUSTOMER_ERROR
 import com.iosdeveloper.utils.STRIPE_DESCRIPTION_PARAMETER
 import com.iosdeveloper.utils.STRIPE_TEST_TOKEN
@@ -52,8 +52,8 @@ fun Application.module(testing: Boolean = false) {
 
     routing {
         home()
-        cards()
-        charges()
+        stripe()
+        brainTree()
     }
 }
 
