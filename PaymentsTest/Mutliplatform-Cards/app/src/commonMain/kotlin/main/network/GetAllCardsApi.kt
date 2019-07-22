@@ -17,7 +17,6 @@ class GetAllCardsApi(val callback:CardsListHandler, errorHandler:ErrorHandler) :
     }
 
     override fun processApiResponse(responseType: ApiResponseEnum, response: String) {
-        println("Respose : $response")
         val allUserCards:List<UserCard> = Json.nonstrict.parse(UserCard.serializer().list, response)
         callback(allUserCards)
     }
