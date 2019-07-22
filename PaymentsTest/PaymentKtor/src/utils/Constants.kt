@@ -2,7 +2,7 @@ package com.iosdeveloper.utils
 
 import java.util.*
 
-val STRIPE_TEST_TOKEN:String = "sk_test_yjZ93gGGZq0nyh1C3AXofbqF"
+val STRIPE_TEST_TOKEN:String = ""
 val STRIPE_AMOUNT_PARAMETER:String = "amount"
 val STRIPE_DESCRIPTION_PARAMETER:String = "description"
 val STRIPE_CURRENCY_PARAMETER:String = "currency"
