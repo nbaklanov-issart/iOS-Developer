@@ -2,7 +2,11 @@ package com.iosdeveloper.utils
 
 import java.util.*
 
-val STRIPE_TEST_TOKEN:String = ""
+val BRAIN_TREE_MERCHANT:String = "nq8dgjgmgsf9jf48"
+val BRAIN_TREE_PUBLIC_KEY:String = "3pwxz6ws9hvfb629"
+val BRAIN_TREE_PRIVATE_KEY:String = "8bf8ab3d2439e72f855e894bebd63bec"
+
+val STRIPE_TEST_TOKEN:String = "sk_test_yjZ93gGGZq0nyh1C3AXofbqF"
 val STRIPE_AMOUNT_PARAMETER:String = "amount"
 val STRIPE_DESCRIPTION_PARAMETER:String = "description"
 val STRIPE_CURRENCY_PARAMETER:String = "currency"
