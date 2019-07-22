@@ -3,4 +3,5 @@
     <string name="add_card_stripe_button_title">Add (Stripe)</string>
     <string name="add_button_title">Add</string>
     <string name="cancel_button_title">Cancel</string>
+    <string name="pay_pal_charge_title">Pay Money (PayPal)</string>
 </resources>

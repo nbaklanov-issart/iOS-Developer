@@ -9,10 +9,10 @@ import main.utils.BasicHandler
 import main.utils.ErrorHandler
 import overcoming.model.enum.ApiResponseEnum
 
-class ChargeApi(val callback:BasicHandler, errorHandler:ErrorHandler) : BaseApi(errorHandler) {
+class StripeChargeApi(val callback:BasicHandler, errorHandler:ErrorHandler) : BaseApi(errorHandler) {
 
     init {
-        requestEncodedPath="/payments/shutupandtakemymoney/"
+        requestEncodedPath="/payments/stripe/shutupandtakemymoney/"
     }
 
     fun chargeUsingCard(card: UserCard) {

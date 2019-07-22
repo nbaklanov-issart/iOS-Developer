@@ -1,4 +1,4 @@
-package main.activities
+package main.activities.stripe
 
 import android.app.Activity
 import android.content.Intent

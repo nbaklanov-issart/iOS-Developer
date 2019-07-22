@@ -1,4 +1,4 @@
-package main.fragments
+package main.fragments.stripe
 
 import android.app.Activity
 import android.content.Intent
@@ -12,17 +12,17 @@ import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.fragment_cards_list.*
 import main.R
-import main.activities.AddStripeCardActivity
+import main.activities.stripe.AddStripeCardActivity
 import main.model.UserCard
 import main.model.platform.MappedUserCard
-import main.presenters.CardsListPresenter
+import main.presenters.stripe.StripeCardsListPresenter
 import main.utils.CARD_OBJECT_PARAMETER
 import main.utils.DEFAULT_STRING_VALUE
 import main.utils.MESSAGE_TEXT_PARAMETER
 
 class CardsFragment : Fragment(), CardsRowListener {
     private val STRIPE_ACTIVITY_RESULT:Int = 0
-    private val presenter = CardsListPresenter()
+    private val presenter = StripeCardsListPresenter()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

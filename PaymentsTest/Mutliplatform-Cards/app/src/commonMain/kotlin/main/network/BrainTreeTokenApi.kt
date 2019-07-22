@@ -10,15 +10,17 @@ import main.utils.BrainTreeTokenHandler
 import main.utils.ErrorHandler
 import overcoming.model.enum.ApiResponseEnum
 
-class BrainTreeApi(val callback:BrainTreeTokenHandler, errorHandler:ErrorHandler) : BaseApi(errorHandler) {
-    private val baseApiPath:String = "/payments/braintree"
+class BrainTreeTokenApi(val callback:BrainTreeTokenHandler, errorHandler:ErrorHandler) : BaseApi(errorHandler) {
+    init {
+        requestEncodedPath = "/payments/braintree/gettoken"
+    }
 
     fun getUserToken() {
-        requestEncodedPath="$baseApiPath/gettoken"
         sendGetRequest()
     }
 
     override fun processApiResponse(responseType: ApiResponseEnum, response: String) {
+        println("TOKEN : $response")
         val token = Json.nonstrict.parse(BrainTreeToken.serializer(), response)
         callback(token)
     }

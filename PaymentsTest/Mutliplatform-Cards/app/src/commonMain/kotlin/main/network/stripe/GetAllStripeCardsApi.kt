@@ -7,9 +7,9 @@ import main.utils.CardsListHandler
 import main.utils.ErrorHandler
 import overcoming.model.enum.ApiResponseEnum
 
-class GetAllCardsApi(val callback:CardsListHandler, errorHandler:ErrorHandler) : BaseApi(errorHandler) {
+class GetAllStripeCardsApi(val callback:CardsListHandler, errorHandler:ErrorHandler) : BaseApi(errorHandler) {
     init {
-        requestEncodedPath="/cards/getall/"
+        requestEncodedPath="/cards/stripe/getall/"
     }
 
     fun getAllCards() {

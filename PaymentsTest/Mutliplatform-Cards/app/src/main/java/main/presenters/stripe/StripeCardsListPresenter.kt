@@ -1,13 +1,13 @@
-package main.presenters
+package main.presenters.stripe
 
 import androidx.lifecycle.MutableLiveData
-import main.interactors.AllCardsInteractor
-import main.interfaces.IAllCardsPresenter
+import main.interactors.stripe.AllStripeCardsInteractor
+import main.interfaces.IStripeAllCardsPresenter
 import main.model.UserCard
 import main.utils.DEFAULT_STRING_VALUE
 
-class CardsListPresenter : IAllCardsPresenter {
-    private val interactor = AllCardsInteractor(this)
+class StripeCardsListPresenter : IStripeAllCardsPresenter {
+    private val interactor = AllStripeCardsInteractor(this)
 
     val cardsList:MutableLiveData<List<UserCard>> = MutableLiveData()
     val errorMessage:MutableLiveData<String> = MutableLiveData()
@@ -31,9 +31,7 @@ class CardsListPresenter : IAllCardsPresenter {
         interactor.getAllCards()
     }
 
-    fun detachView() {
-
-    }
+    fun detachView() {}
 
     fun addNewCard(card:UserCard) {
         interactor.sendNewCard(card)

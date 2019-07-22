@@ -1,4 +1,4 @@
-package main.fragments
+package main.fragments.stripe
 
 import main.model.UserCard
 

@@ -1,17 +1,18 @@
-package main.network
+package main.network.stripe
 
 import io.ktor.content.TextContent
 import io.ktor.http.ContentType
 import kotlinx.serialization.json.Json
 import main.model.UserCard
+import main.network.BaseApi
 import main.utils.BasicHandler
 import main.utils.ErrorHandler
 import overcoming.model.enum.ApiResponseEnum
 
-class AddCardApi(val callback:BasicHandler, errorHandler:ErrorHandler) : BaseApi(errorHandler) {
+class AddStripeCardApi(val callback:BasicHandler, errorHandler:ErrorHandler) : BaseApi(errorHandler) {
 
     init {
-        requestEncodedPath="/cards/addcard/"
+        requestEncodedPath="/cards/stripe/addcard/"
     }
 
     fun addNewCard(card:UserCard) {

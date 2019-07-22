@@ -16,8 +16,8 @@ apply plugin: 'kotlin-android-extensions'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId 'org.jetbrains.kotlin.mpp_app_android'
-        minSdkVersion 19
+        applicationId 'iosdeveloper.multicards'
+        minSdkVersion 21
         targetSdkVersion 28
         versionCode 1
         versionName '1.0'
@@ -61,7 +61,8 @@ dependencies {
 
     //Payments
     implementation 'com.stripe:stripe-android:10.0.0'
-    implementation 'com.braintreepayments.api:drop-in:3.7.1'
+    //implementation 'com.braintreepayments.api:braintree:3.3.0'
+    implementation 'com.braintreepayments.api:drop-in:4.2.0'
 
     androidTestImplementation 'androidx.test:runner:1.2.0'
     implementation 'androidx.recyclerview:recyclerview:1.0.0'

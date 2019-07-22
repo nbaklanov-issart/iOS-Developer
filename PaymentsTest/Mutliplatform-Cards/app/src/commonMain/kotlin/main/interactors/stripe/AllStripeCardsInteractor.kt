@@ -1,14 +1,13 @@
-package main.interactors
+package main.interactors.stripe
 
-import main.interfaces.IAllCardsPresenter
+import main.interfaces.IStripeAllCardsPresenter
 import main.model.UserCard
-import main.repositories.CardsRepository
-import main.repositories.PaymentRepository
+import main.repositories.StripeRepository
 
-class AllCardsInteractor(private val presenter:IAllCardsPresenter) {
+class AllStripeCardsInteractor(private val presenter:IStripeAllCardsPresenter) {
     fun getAllCards() {
         presenter.loadingProcessStarted()
-        CardsRepository().getAllCards( { cardsList ->
+        StripeRepository.getAllCards( { cardsList ->
             presenter.loadingProcessFinished()
             presenter.updateCardList(cardsList)
         } , { _, errorText ->
@@ -19,7 +18,7 @@ class AllCardsInteractor(private val presenter:IAllCardsPresenter) {
 
     fun sendNewCard(card:UserCard) {
         presenter.loadingProcessStarted()
-        CardsRepository().addNewCard(card, {
+        StripeRepository.addNewCard(card, {
             presenter.loadingProcessFinished()
         } , { _, errorText ->
             presenter.loadingProcessFinished()
@@ -29,7 +28,7 @@ class AllCardsInteractor(private val presenter:IAllCardsPresenter) {
 
     fun payUsingCard(card:UserCard) {
         presenter.loadingProcessStarted()
-        PaymentRepository().payUsingCard(card, {
+        StripeRepository.payUsingCard(card, {
             presenter.loadingProcessFinished()
             presenter.displayErrorMessage("suck-cess")
         } , { _, errorText ->

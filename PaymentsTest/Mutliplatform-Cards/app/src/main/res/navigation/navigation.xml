@@ -4,7 +4,7 @@
             android:id="@+id/navigation" app:startDestination="@id/cardsFragment">
 
     <fragment android:id="@+id/cardsFragment"
-              android:name="main.fragments.CardsFragment"
+              android:name="main.fragments.stripe.CardsFragment"
               android:label="CardsFragment"/>
 
 </navigation>
