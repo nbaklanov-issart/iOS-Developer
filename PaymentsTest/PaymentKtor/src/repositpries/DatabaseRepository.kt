@@ -20,7 +20,24 @@ object DatabaseRepository {
             create(StripeClientCard)
             create(StripeClient)
             create(StripeTransaction)
+            create(PayPalTransaction)
         }
+    }
+
+    fun addPayPalTransaction(desc:String, success:Boolean):TransactionResult {
+        var result = TransactionResult()
+        transaction {
+            PayPalTransaction.insert {
+                try {
+                    it[description] = desc
+                    it[isSuccess] = success
+                    result = result.copy(success = true)
+                } catch (genericException:Exception) {
+                    result = result.copy(success = false, message = "$GENERIC_INSERT_ERROR : ${genericException.localizedMessage}" )
+                }
+            }
+        }
+        return result
     }
 
     fun stripeClientExist():Boolean {

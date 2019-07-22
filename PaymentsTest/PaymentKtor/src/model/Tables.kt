@@ -21,3 +21,9 @@ object StripeTransaction : Table() {
     val clientId = varchar("clientId", 255)
     val description = varchar("description", 1024)
 }
+
+object PayPalTransaction : Table() {
+    val id = integer("id").primaryKey().autoIncrement()
+    val description = varchar("description", 1024)
+    val isSuccess = bool("success")
+}
