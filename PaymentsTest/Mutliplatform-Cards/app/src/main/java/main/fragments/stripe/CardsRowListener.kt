@@ -1,7 +1,7 @@
 package main.fragments.stripe
 
-import main.model.UserCard
+import main.model.StripeUserCard
 
 interface CardsRowListener {
-    fun onRowSelected(card:UserCard)
+    fun onRowSelected(cardStripe:StripeUserCard)
 }

@@ -4,9 +4,9 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import main.R
-import main.model.UserCard
+import main.model.StripeUserCard
 
-class CardsListAdapter(private val cardsList:List<UserCard>,
+class CardsListAdapter(private val cardsList:List<StripeUserCard>,
                        private val listener: CardsRowListener
 ) : RecyclerView.Adapter<CardsListViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CardsListViewHolder {

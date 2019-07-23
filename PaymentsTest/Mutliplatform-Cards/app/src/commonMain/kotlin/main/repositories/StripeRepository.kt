@@ -1,6 +1,6 @@
 package main.repositories
 
-import main.model.UserCard
+import main.model.StripeUserCard
 import main.network.stripe.AddStripeCardApi
 import main.network.GetAllStripeCardsApi
 import main.network.StripeChargeApi
@@ -13,11 +13,11 @@ object StripeRepository {
         GetAllStripeCardsApi(callback, errorCallback).getAllCards()
     }
 
-    fun addNewCard(card:UserCard, callback:BasicHandler, errorCallback:ErrorHandler) {
-        AddStripeCardApi(callback, errorCallback).addNewCard(card)
+    fun addNewCard(cardStripe:StripeUserCard, callback:BasicHandler, errorCallback:ErrorHandler) {
+        AddStripeCardApi(callback, errorCallback).addNewCard(cardStripe)
     }
 
-    fun payUsingCard(card: UserCard, callback:BasicHandler, errorCallback:ErrorHandler) {
-        StripeChargeApi(callback, errorCallback).chargeUsingCard(card)
+    fun payUsingCard(cardStripe: StripeUserCard, callback:BasicHandler, errorCallback:ErrorHandler) {
+        StripeChargeApi(callback, errorCallback).chargeUsingCard(cardStripe)
     }
 }

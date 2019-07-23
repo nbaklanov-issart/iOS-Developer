@@ -1,11 +1,7 @@
 package main.network
 
-import io.ktor.http.ContentType
 import kotlinx.serialization.json.Json
-import kotlinx.serialization.list
 import main.model.BrainTreeToken
-import main.model.UserCard
-import main.utils.BasicHandler
 import main.utils.BrainTreeTokenHandler
 import main.utils.ErrorHandler
 import overcoming.model.enum.ApiResponseEnum

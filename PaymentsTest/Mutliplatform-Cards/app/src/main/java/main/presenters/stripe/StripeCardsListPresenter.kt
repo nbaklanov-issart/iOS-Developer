@@ -3,13 +3,13 @@ package main.presenters.stripe
 import androidx.lifecycle.MutableLiveData
 import main.interactors.stripe.AllStripeCardsInteractor
 import main.interfaces.IStripeAllCardsPresenter
-import main.model.UserCard
+import main.model.StripeUserCard
 import main.utils.DEFAULT_STRING_VALUE
 
 class StripeCardsListPresenter : IStripeAllCardsPresenter {
     private val interactor = AllStripeCardsInteractor(this)
 
-    val cardsList:MutableLiveData<List<UserCard>> = MutableLiveData()
+    val cardsList:MutableLiveData<List<StripeUserCard>> = MutableLiveData()
     val errorMessage:MutableLiveData<String> = MutableLiveData()
 
     val cardsListVisibility:MutableLiveData<Boolean> = MutableLiveData()
@@ -33,22 +33,22 @@ class StripeCardsListPresenter : IStripeAllCardsPresenter {
 
     fun detachView() {}
 
-    fun addNewCard(card:UserCard) {
-        interactor.sendNewCard(card)
+    fun addNewCard(cardStripe:StripeUserCard) {
+        interactor.sendNewCard(cardStripe)
     }
 
-    fun payUsingCard(card:UserCard) {
-        interactor.payUsingCard(card)
+    fun payUsingCard(cardStripe:StripeUserCard) {
+        interactor.payUsingCard(cardStripe)
     }
 
     override fun displayErrorMessage(errorText: String) {
         errorMessage.postValue(errorText)
     }
 
-    override fun updateCardList(userCards: List<UserCard>) {
-        cardsList.postValue(userCards)
-        cardsListVisibility.postValue(userCards.isNotEmpty())
-        emptyLabelVisibility.postValue(userCards.isEmpty())
+    override fun updateCardList(stripeUserCards: List<StripeUserCard>) {
+        cardsList.postValue(stripeUserCards)
+        cardsListVisibility.postValue(stripeUserCards.isNotEmpty())
+        emptyLabelVisibility.postValue(stripeUserCards.isEmpty())
     }
 
     override fun loadingProcessStarted() {

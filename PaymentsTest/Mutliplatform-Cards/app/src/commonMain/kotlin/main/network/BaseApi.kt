@@ -21,10 +21,10 @@ import overcoming.model.enum.ApiResponseEnum
 abstract class BaseApi(exceptionHandler:ErrorHandler) {
     protected val errorCallback: ErrorHandler = exceptionHandler
     protected var requestEncodedPath:String = DEFAULT_STRING_VALUE
+    protected var serverAddress:String = "192.168.1.186"
+    protected var serverProtocol: URLProtocol = URLProtocol.HTTP
 
     private val serverPort:Int = 8080
-    private val serverAddress:String = "192.168.1.186"
-    private val serverProtocol: URLProtocol = URLProtocol.HTTP
     private val client = HttpClient {
         expectSuccess = false
         install(JsonFeature) {

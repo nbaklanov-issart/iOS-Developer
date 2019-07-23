@@ -3,7 +3,7 @@ package main.network.stripe
 import io.ktor.content.TextContent
 import io.ktor.http.ContentType
 import kotlinx.serialization.json.Json
-import main.model.UserCard
+import main.model.StripeUserCard
 import main.network.BaseApi
 import main.utils.BasicHandler
 import main.utils.ErrorHandler
@@ -15,9 +15,9 @@ class AddStripeCardApi(val callback:BasicHandler, errorHandler:ErrorHandler) : B
         requestEncodedPath="/cards/stripe/addcard/"
     }
 
-    fun addNewCard(card:UserCard) {
-        println("CARD : $card")
-        val cardData = Json.stringify(UserCard.serializer(), card)
+    fun addNewCard(cardStripe:StripeUserCard) {
+        println("CARD : $cardStripe")
+        val cardData = Json.stringify(StripeUserCard.serializer(), cardStripe)
         sendPostRequest(requestBody = TextContent(cardData, ContentType.Application.Json))
     }
 

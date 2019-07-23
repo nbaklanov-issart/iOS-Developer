@@ -3,8 +3,8 @@ package main.network
 import io.ktor.http.ContentType
 import io.ktor.content.TextContent
 import kotlinx.serialization.json.Json
-import main.model.ChargeParameters
-import main.model.UserCard
+import main.model.StripeChargeParameters
+import main.model.StripeUserCard
 import main.utils.BasicHandler
 import main.utils.ErrorHandler
 import overcoming.model.enum.ApiResponseEnum
@@ -15,9 +15,9 @@ class StripeChargeApi(val callback:BasicHandler, errorHandler:ErrorHandler) : Ba
         requestEncodedPath="/payments/stripe/shutupandtakemymoney/"
     }
 
-    fun chargeUsingCard(card: UserCard) {
-        val paymentParameters = ChargeParameters(card.id.toInt())
-        val paymentData = Json.stringify(ChargeParameters.serializer(), paymentParameters)
+    fun chargeUsingCard(cardStripe: StripeUserCard) {
+        val paymentParameters = StripeChargeParameters(cardStripe.id.toInt())
+        val paymentData = Json.stringify(StripeChargeParameters.serializer(), paymentParameters)
         sendPostRequest(requestBody = TextContent(paymentData, ContentType.Application.Json))
     }
 

@@ -1,7 +1,7 @@
 package main.interfaces
 
-import main.model.UserCard
+import main.model.StripeUserCard
 
 interface IStripeAllCardsPresenter : IBasePresenter, ILoadingPresenter {
-    fun updateCardList(userCards:List<UserCard>)
+    fun updateCardList(stripeUserCards:List<StripeUserCard>)
 }

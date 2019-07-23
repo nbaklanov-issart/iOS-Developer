@@ -2,7 +2,7 @@ package main.network
 
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.list
-import main.model.UserCard
+import main.model.StripeUserCard
 import main.utils.CardsListHandler
 import main.utils.ErrorHandler
 import overcoming.model.enum.ApiResponseEnum
@@ -17,7 +17,7 @@ class GetAllStripeCardsApi(val callback:CardsListHandler, errorHandler:ErrorHand
     }
 
     override fun processApiResponse(responseType: ApiResponseEnum, response: String) {
-        val allUserCards:List<UserCard> = Json.nonstrict.parse(UserCard.serializer().list, response)
-        callback(allUserCards)
+        val allStripeUserCards:List<StripeUserCard> = Json.nonstrict.parse(StripeUserCard.serializer().list, response)
+        callback(allStripeUserCards)
     }
 }

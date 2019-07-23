@@ -1,6 +1,6 @@
 package main.model.platform
 
-import main.model.UserCard
+import main.model.StripeUserCard
 import java.io.Serializable
 
 data class MappedUserCard(val id:String,
@@ -8,11 +8,11 @@ data class MappedUserCard(val id:String,
                           val cvv:String,
                           val token:String) : Serializable {
     companion object {
-        fun toMappedCard(value:UserCard):MappedUserCard {
+        fun toMappedCard(value:StripeUserCard):MappedUserCard {
             return MappedUserCard(value.id, value.number, value.cvv, value.token)
         }
-        fun fromMappedCard(value:MappedUserCard):UserCard {
-            return UserCard(value.id, value.number, value.cvv, value.token)
+        fun fromMappedCard(value:MappedUserCard):StripeUserCard {
+            return StripeUserCard(value.id, value.number, value.cvv, value.token)
         }
     }
 }

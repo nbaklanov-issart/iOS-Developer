@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.fragment_cards_list.*
 import main.R
 import main.activities.stripe.AddStripeCardActivity
-import main.model.UserCard
+import main.model.StripeUserCard
 import main.model.platform.MappedUserCard
 import main.presenters.stripe.StripeCardsListPresenter
 import main.utils.CARD_OBJECT_PARAMETER
@@ -51,8 +51,8 @@ class CardsFragment : Fragment(), CardsRowListener {
         unboundFromModel()
     }
 
-    override fun onRowSelected(card: UserCard) {
-        presenter.payUsingCard(card)
+    override fun onRowSelected(cardStripe: StripeUserCard) {
+        presenter.payUsingCard(cardStripe)
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {

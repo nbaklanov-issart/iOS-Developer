@@ -1,7 +1,7 @@
 package main.interactors.stripe
 
 import main.interfaces.IStripeAllCardsPresenter
-import main.model.UserCard
+import main.model.StripeUserCard
 import main.repositories.StripeRepository
 
 class AllStripeCardsInteractor(private val presenter:IStripeAllCardsPresenter) {
@@ -16,9 +16,9 @@ class AllStripeCardsInteractor(private val presenter:IStripeAllCardsPresenter) {
         })
     }
 
-    fun sendNewCard(card:UserCard) {
+    fun sendNewCard(cardStripe:StripeUserCard) {
         presenter.loadingProcessStarted()
-        StripeRepository.addNewCard(card, {
+        StripeRepository.addNewCard(cardStripe, {
             presenter.loadingProcessFinished()
         } , { _, errorText ->
             presenter.loadingProcessFinished()
@@ -26,9 +26,9 @@ class AllStripeCardsInteractor(private val presenter:IStripeAllCardsPresenter) {
         })
     }
 
-    fun payUsingCard(card:UserCard) {
+    fun payUsingCard(cardStripe:StripeUserCard) {
         presenter.loadingProcessStarted()
-        StripeRepository.payUsingCard(card, {
+        StripeRepository.payUsingCard(cardStripe, {
             presenter.loadingProcessFinished()
             presenter.displayErrorMessage("suck-cess")
         } , { _, errorText ->
