@@ -27,3 +27,9 @@ object PayPalTransaction : Table() {
     val description = varchar("description", 1024)
     val isSuccess = bool("success")
 }
+
+object SimpleUser : Table() {
+    val id = integer("id").primaryKey().autoIncrement()
+    val login = varchar("login", 1024)
+    val password = varchar("password", 1024)
+}

@@ -1,11 +1,14 @@
 package com.iosdeveloper.repositpries
 
 import com.iosdeveloper.model.*
+import com.iosdeveloper.model.user.MyUser
 import com.iosdeveloper.utils.GENERIC_INSERT_ERROR
+import com.sun.org.apache.xpath.internal.operations.Bool
 import com.zaxxer.hikari.HikariConfig
 import com.zaxxer.hikari.HikariDataSource
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
+import org.h2.engine.User
 import org.jetbrains.exposed.sql.Database
 import org.jetbrains.exposed.sql.SchemaUtils.create
 import org.jetbrains.exposed.sql.insert
@@ -21,7 +24,34 @@ object DatabaseRepository {
             create(StripeClient)
             create(StripeTransaction)
             create(PayPalTransaction)
+            create(SimpleUser)
         }
+    }
+
+    fun checkSimpleUser(inputLogin:String) : Boolean {
+        val usersList = transaction {
+            SimpleUser.select { SimpleUser.login eq  inputLogin}.map {
+                MyUser(login = it[SimpleUser.login],
+                    password = it[SimpleUser.password])
+            }
+        }
+        return usersList.isNotEmpty()
+    }
+
+    fun addSimpleUser(user:MyUser) : TransactionResult {
+        var result = TransactionResult()
+        transaction {
+            SimpleUser.insert {
+                try {
+                    it[login] = user.login
+                    it[password] = user.password
+                    result = result.copy(success = true)
+                } catch (genericException:Exception) {
+                    result = result.copy(success = false, message = "$GENERIC_INSERT_ERROR : ${genericException.localizedMessage}" )
+                }
+            }
+        }
+        return result
     }
 
     fun addPayPalTransaction(desc:String, success:Boolean):TransactionResult {
