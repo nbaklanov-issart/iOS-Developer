@@ -1,6 +1,5 @@
 package main.network.user
 
-
 import io.ktor.content.TextContent
 import io.ktor.http.ContentType
 import kotlinx.serialization.json.Json
@@ -11,13 +10,13 @@ import main.utils.BasicHandler
 import main.utils.ErrorHandler
 import overcoming.model.enum.ApiResponseEnum
 
-class RegistrationApi(val callback:BasicHandler, errorHandler:ErrorHandler) : BaseApi(errorHandler) {
+class LoginApi(val callback:BasicHandler, errorHandler:ErrorHandler) : BaseApi(errorHandler) {
 
     init {
-        requestEncodedPath="/user/signup/"
+        requestEncodedPath="/user/login/"
     }
 
-    fun register(user: MyUser) {
+    fun login(user: MyUser) {
         val cardData = Json.stringify(MyUser.serializer(), user)
         sendPostRequest(requestBody = TextContent(cardData, ContentType.Application.Json))
     }

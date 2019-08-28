@@ -33,6 +33,14 @@ class StripeCardsListPresenter : IStripeAllCardsPresenter {
 
     fun detachView() {}
 
+    fun login() {
+        interactor.login()
+    }
+
+    fun register() {
+        interactor.register()
+    }
+
     fun addNewCard(cardStripe:StripeUserCard) {
         interactor.sendNewCard(cardStripe)
     }

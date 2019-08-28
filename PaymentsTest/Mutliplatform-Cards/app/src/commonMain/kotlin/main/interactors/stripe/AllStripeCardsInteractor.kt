@@ -5,6 +5,30 @@ import main.model.StripeUserCard
 import main.repositories.StripeRepository
 
 class AllStripeCardsInteractor(private val presenter:IStripeAllCardsPresenter) {
+    fun register() {
+        presenter.loadingProcessStarted()
+        StripeRepository.register( {
+            println("REGISTERED")
+            presenter.loadingProcessFinished()
+            presenter.displayErrorMessage("REGISTERED")
+        } , { _, errorText ->
+            presenter.loadingProcessFinished()
+            presenter.displayErrorMessage(errorText)
+        })
+    }
+
+    fun login() {
+        presenter.loadingProcessStarted()
+        StripeRepository.login( {
+            println("LOGGED")
+            presenter.loadingProcessFinished()
+            presenter.displayErrorMessage("LOGGED")
+        } , { _, errorText ->
+            presenter.loadingProcessFinished()
+            presenter.displayErrorMessage(errorText)
+        })
+    }
+
     fun getAllCards() {
         presenter.loadingProcessStarted()
         StripeRepository.getAllCards( { cardsList ->

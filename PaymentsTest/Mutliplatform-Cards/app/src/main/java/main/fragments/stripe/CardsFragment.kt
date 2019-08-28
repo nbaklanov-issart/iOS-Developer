@@ -38,6 +38,14 @@ class CardsFragment : Fragment(), CardsRowListener {
 
         cardslist.layoutManager = LinearLayoutManager(context!!)
 
+        logButton.setOnClickListener {
+            presenter.login()
+        }
+
+        regButton.setOnClickListener {
+            presenter.register()
+        }
+
         addStripe.setOnClickListener {
             val addStripeIntent = Intent(context, AddStripeCardActivity::class.java)
             startActivityForResult(addStripeIntent, STRIPE_ACTIVITY_RESULT)

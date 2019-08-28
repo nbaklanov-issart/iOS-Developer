@@ -15,6 +15,26 @@
             app:layout_constraintBottom_toBottomOf="parent">
 
         <Button
+                android:text="Login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/logButton"
+                app:layout_constraintEnd_toStartOf="@+id/regButton"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintStart_toEndOf="@+id/addStripe"
+                android:layout_marginStart="8dp"/>
+
+        <Button
+                android:text="Register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/regButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <Button
                 android:text="@string/add_card_stripe_button_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" android:id="@+id/addStripe"
