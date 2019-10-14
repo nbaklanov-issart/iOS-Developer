@@ -3,7 +3,6 @@ package com.iosdeveloper.repositpries
 import com.iosdeveloper.model.*
 import com.iosdeveloper.model.user.MyUser
 import com.iosdeveloper.utils.GENERIC_INSERT_ERROR
-import com.sun.org.apache.xpath.internal.operations.Bool
 import com.zaxxer.hikari.HikariConfig
 import com.zaxxer.hikari.HikariDataSource
 import kotlinx.coroutines.Dispatchers

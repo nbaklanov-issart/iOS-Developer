@@ -29,7 +29,7 @@ repositories {
 
 dependencies {
     implementation "io.ktor:ktor-gson:$ktor_version"
-
+    
     //Payments
     implementation 'com.braintreepayments.gateway:braintree-java:2.101.0'
     compile "com.stripe:stripe-java:10.11.0"
