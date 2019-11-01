@@ -74,9 +74,7 @@ fun Route.stripe() {
                 customer.id,
                 successCharge.description)
             DatabaseRepository.addStripeTransaction(transactionObject)
-
             call.respond(HttpStatusCode.OK, "Suck-cess, biatch!")
-
 
         } catch (chargeException: StripeException) {
             call.respond(DefaultErrorStatus, "$CHARGE_STRIPE_ERROR : ${chargeException.message}")

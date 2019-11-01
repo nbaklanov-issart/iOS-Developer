@@ -12,6 +12,6 @@ private val HOME_ROUTE:String = "/"
 
 fun Route.home() {
     get(HOME_ROUTE) {
-        call.respond(MyUser())
+        call.respondText("Payments test server is running")
     }
 }
