@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import './screens/mainPage.dart';
+import './tabs/brainTreeTab.dart';
+import './tabs/stripeTab.dart';
 
 void main() => runApp(MyApp());
 
@@ -28,7 +29,8 @@ class MyApp extends StatelessWidget {
           ),
           body: TabBarView(
             children: <Widget>[
-              
+              StripeTab(),
+              BrainTreeTab()
             ],
           ),
         ),
