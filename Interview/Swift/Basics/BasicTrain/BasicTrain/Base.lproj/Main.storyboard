@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JBO-84-Sbc">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Arrays-->
+        <scene sceneID="LxV-Zv-FaQ">
+            <objects>
+                <viewController id="Hnq-dR-X4E" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dyF-sv-gDB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xp7-K0-mqL">
+                                <rect key="frame" x="7" y="44" width="400" height="122"/>
+                                <string key="text">Вы получаете массив целых чисел. Возможны два варианта. Либо все числа в массиве четные - одно не четное. Либо, наоборот, все не четные а одно четное. 
+
+Найти это "необычное" число вывести его.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="xp7-K0-mqL" firstAttribute="top" secondItem="PfT-Oy-UC3" secondAttribute="top" id="RJs-1j-moy"/>
+                            <constraint firstItem="PfT-Oy-UC3" firstAttribute="trailing" secondItem="xp7-K0-mqL" secondAttribute="trailing" constant="7" id="avG-wn-Hdi"/>
+                            <constraint firstItem="xp7-K0-mqL" firstAttribute="leading" secondItem="PfT-Oy-UC3" secondAttribute="leading" constant="7" id="c1Q-lU-wpS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PfT-Oy-UC3"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Arrays" id="aLI-E8-3F8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ifG-wW-ThD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="240.57971014492756" y="208.92857142857142"/>
+        </scene>
+        <!--Trees-->
+        <scene sceneID="4U1-c8-om7">
+            <objects>
+                <viewController id="KzW-8J-x0a" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a4d-zb-ZNv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Implement Needed parts of : TreeNode class" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Mv-SR-ZkM">
+                                <rect key="frame" x="20" y="44" width="374" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="UFP-w6-Pc9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="8Mv-SR-ZkM" firstAttribute="top" secondItem="G4a-Bm-dbO" secondAttribute="top" id="9SA-Fv-g6g"/>
+                            <constraint firstItem="8Mv-SR-ZkM" firstAttribute="leading" secondItem="G4a-Bm-dbO" secondAttribute="leading" constant="20" id="Ws9-h1-w3C"/>
+                            <constraint firstItem="G4a-Bm-dbO" firstAttribute="trailing" secondItem="8Mv-SR-ZkM" secondAttribute="trailing" constant="20" id="ovA-gY-9OQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="G4a-Bm-dbO"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Trees" id="uAm-cM-JJc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BEx-vt-jbm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="986.95652173913049" y="208.92857142857142"/>
+        </scene>
+        <!--Century-->
+        <scene sceneID="uIu-ci-W4q">
+            <objects>
+                <viewController id="LH2-b2-hVf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bL4-nR-5gS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VHi-JN-b0r">
+                                <rect key="frame" x="20" y="77" width="374" height="143"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="143" id="Dkx-xp-Zwl"/>
+                                </constraints>
+                                <string key="text">The first century spans from the year 1 up to and including the year 100, The second - from the year 101 up to and including the year 200, etc.  Given a year, return the century it is in.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="WCN-8W-6rJ" firstAttribute="trailing" secondItem="VHi-JN-b0r" secondAttribute="trailing" constant="20" id="MQo-tp-SVH"/>
+                            <constraint firstItem="VHi-JN-b0r" firstAttribute="leading" secondItem="WCN-8W-6rJ" secondAttribute="leading" constant="20" id="Mhx-p4-nBu"/>
+                            <constraint firstItem="VHi-JN-b0r" firstAttribute="top" secondItem="WCN-8W-6rJ" secondAttribute="top" constant="33" id="lcF-N2-JO6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WCN-8W-6rJ"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Century" id="wSi-Al-hwi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vPI-MZ-yce" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="240.57971014492756" y="-439.28571428571428"/>
+        </scene>
+        <!--Alliance-->
+        <scene sceneID="NMJ-6z-KH8">
+            <objects>
+                <viewController id="dzh-Ye-gjv" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ezT-3k-IEb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="drE-sJ-DDO">
+                                <rect key="frame" x="20" y="44" width="374" height="364"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <mutableString key="text">Вы командир алльянса, идете на усиление в город, со своим отрядом. Сами вы уже в боях не учавствуете. Ваш дозор обнаруживает монстра и передает развед сведения о здоровье и силе монстра. Вам нужно решить, сможете ли вы убить монстра без потерь в живой силе или нет. 
+Битва с монстром проходит по раундам. Сначала вы командуете одному из своих солдат атаковать - он наносит монстру урон. Если здоровье монстра закончилось - он умирает. Если не закончилось - он бьет в ответ. И потом следующий раунд. 
+ Вам на вход будет подаваться два массива целых чисел. Один массив - это здоровье, второй - урон. Первый элемент в каждом массиве - характеристики монстра, остальное - ваши солдаты.  Посчитайте, можете ли вы победить монстра без потери солдат.</mutableString>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="vcc-EU-AS5"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Alliance" id="zUe-VR-AsD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qwU-fp-ClT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="956.52173913043487" y="-439.28571428571428"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="jO5-W2-7eb">
+            <objects>
+                <tabBarController id="JBO-84-Sbc" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="IZB-Pj-ybZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="LH2-b2-hVf" kind="relationship" relationship="viewControllers" id="9fE-Uq-5qJ"/>
+                        <segue destination="Hnq-dR-X4E" kind="relationship" relationship="viewControllers" id="I9a-Lu-j4L"/>
+                        <segue destination="KzW-8J-x0a" kind="relationship" relationship="viewControllers" id="LEy-Mp-vpR"/>
+                        <segue destination="dzh-Ye-gjv" kind="relationship" relationship="viewControllers" id="nJs-ul-P8B"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jej-iY-erP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-678" y="-115"/>
+        </scene>
+    </scenes>
+</document>
