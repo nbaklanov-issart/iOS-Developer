@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JBO-84-Sbc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JBO-84-Sbc">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -116,9 +116,9 @@
                                 <rect key="frame" x="20" y="44" width="374" height="364"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <mutableString key="text">Вы командир алльянса, идете на усиление в город, со своим отрядом. Сами вы уже в боях не учавствуете. Ваш дозор обнаруживает монстра и передает развед сведения о здоровье и силе монстра. Вам нужно решить, сможете ли вы убить монстра без потерь в живой силе или нет. 
+                                <string key="text">Вы командир алльянса, идете на усиление в город, со своим отрядом. Сами вы уже в боях не учавствуете. Ваш дозор обнаруживает монстра и передает развед сведения о здоровье и силе монстра. Вам нужно решить, сможете ли вы убить монстра без потерь в живой силе или нет. 
 Битва с монстром проходит по раундам. Сначала вы командуете одному из своих солдат атаковать - он наносит монстру урон. Если здоровье монстра закончилось - он умирает. Если не закончилось - он бьет в ответ. И потом следующий раунд. 
- Вам на вход будет подаваться два массива целых чисел. Один массив - это здоровье, второй - урон. Первый элемент в каждом массиве - характеристики монстра, остальное - ваши солдаты.  Посчитайте, можете ли вы победить монстра без потери солдат.</mutableString>
+ Вам на вход будет подаваться два массива целых чисел. Один массив - это здоровье, второй - урон. Первый элемент в каждом массиве - характеристики монстра, остальное - ваши солдаты.  Посчитайте, можете ли вы победить монстра без потери солдат.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -147,11 +147,52 @@
                         <segue destination="Hnq-dR-X4E" kind="relationship" relationship="viewControllers" id="I9a-Lu-j4L"/>
                         <segue destination="KzW-8J-x0a" kind="relationship" relationship="viewControllers" id="LEy-Mp-vpR"/>
                         <segue destination="dzh-Ye-gjv" kind="relationship" relationship="viewControllers" id="nJs-ul-P8B"/>
+                        <segue destination="dC9-Lk-YUJ" kind="relationship" relationship="viewControllers" id="egk-Zk-0pv"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jej-iY-erP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-678" y="-115"/>
+        </scene>
+        <!--Century-->
+        <scene sceneID="4bY-ir-cod">
+            <objects>
+                <viewController id="dC9-Lk-YUJ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iei-Ke-z0x">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0lT-PU-pgm">
+                                <rect key="frame" x="20" y="77" width="374" height="474"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="474" id="QYX-BT-jTG"/>
+                                </constraints>
+                                <mutableString key="text">Your task in order to complete this Kata is to write a function which formats a duration, given as a number of seconds, in a human-friendly way.
+
+The function must accept a non-negative integer. If it is zero, it just returns "now". Otherwise, the duration is expressed as a combination of years, days, hours, minutes and seconds.
+
+It is much easier to understand with an example:
+
+formatDuration (62)    // returns "1 minute and 2 seconds"
+formatDuration (3662)  // returns "1 hour, 1 minute and 2 seconds"</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="0lT-PU-pgm" firstAttribute="top" secondItem="n3o-ML-6sn" secondAttribute="top" constant="33" id="0KZ-JR-Mlq"/>
+                            <constraint firstItem="n3o-ML-6sn" firstAttribute="trailing" secondItem="0lT-PU-pgm" secondAttribute="trailing" constant="20" id="1L0-PD-SOK"/>
+                            <constraint firstItem="0lT-PU-pgm" firstAttribute="leading" secondItem="n3o-ML-6sn" secondAttribute="leading" constant="20" id="cQE-Ih-ok2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="n3o-ML-6sn"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Century" id="R7D-u6-Gi3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XU2-7z-bzi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1636.2318840579712" y="-439.28571428571428"/>
         </scene>
     </scenes>
 </document>
